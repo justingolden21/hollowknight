@@ -143,9 +143,31 @@ const CHARMS = {
 		effects: [
 			'Increases Nail damage by 50% rounded up'
 		],
-		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 600 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 480 Geo.<br>When broken, Leg Eater can repair it for 150350 Geo, or for 280 Geo while wearing the Defender\'s Crest.',
+		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 600 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 480 Geo.<br>When broken, Leg Eater can repair it for 350 Geo, or for 280 Geo while wearing the Defender\'s Crest.',
 		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Strength, the Knight must equip it then when speaking to her, give it to her when prompted. She will eat the charm, then ask for 15000 Geo. Once the Geo is paid, she gives the Knight the unbreakable version of the charm. The Grimm Troupe Content Pack is required.',
 		category: 'attack',
+	},
+	'Spell_Twister': {
+		notches: 2,
+		price: 0,
+		location: 'City of Tears',
+		description: 'Reflecting the desires of the Soul Sanctum for mastery over SOUL, it improves the bearer\'s ability to cast spells.<hr>Reduces the SOUL cost of casting spells.',
+		effects: [
+			'Reduces SOUL cost of Spells to 24 from 33.'
+		],
+		acquisition: 'A secret room on the top of the Soul Sanctum, just before fighting Soul Master. The room which leads up to it is filled with Mistakes and Follies which can make reaching the Charm nearly impossible without taking damage as these enemies may spawn right onto the Knight.<br>The charm itself is found attached to some sort of machine similar to the Lore Tablets found around the area.',
+		category: 'soul',
+	},
+	'Steady_Body': {
+		notches: 1,
+		price: 120,
+		location: 'Forgotten Crossroads',
+		description: 'Keeps its bearer from recoiling backwards when they strike an enemy with a nail.<hr>Allows one to stay steady and keep attacking.',
+		effects: [
+			'Removes all knockback/recoil from hitting enemies'
+		],
+		acquisition: 'Bought from Salubra for 120 Geo in the Forgotten Crossroads.',
+		category: 'movement',
 	},
 
 
