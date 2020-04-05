@@ -1,0 +1,52 @@
+img, br {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	-ms-user-drag: none;
+	user-drag: none;
+}
+
+::-moz-selection {
+	background: #e6e6e6;
+}
+::selection {
+	background: #e6e6e6;
+}
+
+body {
+	background: #000 url('https://img.wallpapersafari.com/desktop/1680/1050/16/83/WBwdPK.jpg') no-repeat;
+}
+
+h1 {
+	color: #fff;
+	display: inline;
+}
+
+.charm, .charm-placeholder {
+	/*width: 96px;*/
+	width: 72px;
+	margin: 4px;	
+	padding: 4px;
+}
+.charm:hover {
+	background-color: #fff;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+@media (max-width: 992px) { /* md */
+	.charm {
+		width: 64px;
+	}
+	.charm-placeholder, .charm-br {
+		display: none;
+	}
+}
