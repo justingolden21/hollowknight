@@ -8,15 +8,15 @@ function openCharm(charm) {
 		format(charm) 
 	);
 	$('.modal-body').html(
-		'<img class="decoration" src="img/decorative_top.png">' +
+		'<img class="decoration" src="img/decorative_top.png"><br>' +
 		'<div class="text-center">' +
 		'<b>Notches:</b> ' + CHARMS[charm].notches + getNotches(CHARMS[charm].notches) +
 		' | <b>Price:</b> ' + CHARMS[charm].price + '<img class="geo" src="img/geo.png">' +
 		' | <b>Location:</b> ' + CHARMS[charm].location +
 		'<br><br><i>' + CHARMS[charm].description + '</i>' +
 		'</div>' +
-		'<img class="decoration" src="img/decorative_bottom.png">' +
-		'<br><br><b>Acquisition:</b> <span class="spoiler">' + CHARMS[charm].acquisition + '</span><br><br>'
+		'<br><img class="decoration" src="img/decorative_bottom.png">' +
+		'<br><b>Acquisition:</b> <span class="spoiler">' + CHARMS[charm].acquisition + '</span><br><br>'
 	);
 	$('.modal').modal('show');
 	$('.modal .close').focus();
