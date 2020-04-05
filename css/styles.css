@@ -22,6 +22,7 @@ img, br {
 }
 
 body {
+	color: #000;
 	background: #000 url('https://img.wallpapersafari.com/desktop/1680/1050/16/83/WBwdPK.jpg') no-repeat;
 }
 
@@ -36,7 +37,7 @@ h1 {
 	margin: 4px;	
 	padding: 4px;
 }
-.charm:hover {
+.charm:hover, .charm:focus {
 	background-color: #fff;
 	cursor: pointer;
 	border-radius: 50%;
@@ -48,6 +49,14 @@ h1 {
 
 .geo {
 	width: 16px;
+}
+
+.spoiler {
+	background-color: #000;
+}
+
+.spoiler:hover {
+	background-color: transparent;
 }
 
 @media (max-width: 992px) { /* md */

@@ -19,8 +19,8 @@ function openCharm(charm) {
 		'<b>Notches:</b> ' + CHARMS[charm].notches +
 		'<br><b>Price:</b> ' + CHARMS[charm].price + '<img class="geo" src="img/geo.png">' +
 		'<br><b>Location:</b> ' + CHARMS[charm].location +
-		'<br><b>Description:</b> ' + CHARMS[charm].description +
-		'<br><b>Acquisition:</b> ' + CHARMS[charm].acquisition
+		'<br><b>Description:</b> <i>' + CHARMS[charm].description + '</i>' +
+		'<br><b>Acquisition:</b> <span class="spoiler">' + CHARMS[charm].acquisition + '</span>'
 	);
 	$('.modal').modal('show');
 }
@@ -30,7 +30,7 @@ $( ()=> {
 	for(charm in CHARMS) {
 		idx++;
 		$('#charm-div').append('<img class="charm" src="img/charms/' + charm + '.png"' +
-			' title="' + format(charm) + 
+			' title="' + format(charm) + '" tabindex="0" data-charm="' + charm + '"' +
 			'" onclick="openCharm(\'' + charm + '\')">');
 		if(idx%10==9) {
 			$('#charm-div').append('<br class="charm-br">');
@@ -39,4 +39,8 @@ $( ()=> {
 			}
 		}
 	}
+	$('.charm').keydown( (evt)=> {
+		if(evt.which == 13) // enter
+			openCharm($(':focus').attr('data-charm') );
+	});
 })
