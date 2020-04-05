@@ -37,6 +37,9 @@ function openCharm(charm) {
 	$('.modal .close').focus();
 }
 
+const FRAGILE_TEXT = 'This charm is fragile, and will break if its bearer is killed.';
+const UNBREAKABLE_TEXT = 'Unbreakable:<br>This charm is unbreakable.';
+
 function changeFragile(charm, isFragile) {
 	if(isFragile)
 		charm = charm.replace('Unbreakable','Fragile');
@@ -47,7 +50,24 @@ function changeFragile(charm, isFragile) {
 	$('.nav-link').removeClass('active');
 	$('.nav-link:contains('+(isFragile?'Fragile':'Unbreakable')+')').addClass('active');
 
-	console.log(charm);
+	// set img
+	// $('.modal-content img.modal-charm').attr('src','img/charms/' + charm + '.png');
 
-	// todo: set img, desc troupe info, change active tab
+	// set title
+	$('.modal-title').html(
+		'<img class="modal-charm" src="img/charms/' + charm + '.png"> ' + 
+		format(charm) 
+	);
+
+	// set description, price, and acquisition
+	if(isFragile) {
+		$('.modal-body').html($('.modal-body').html().replace(UNBREAKABLE_TEXT,FRAGILE_TEXT) );
+		$('.modal-body').html($('.modal-body').html().replace('<b>Price:</b> '+CHARMS[charm.replace('Unbreakable','Fragile')].price2,'<b>Price:</b> '+CHARMS[charm.replace('Unbreakable','Fragile')].price) );
+		$('.modal-body').html($('.modal-body').html().replace(CHARMS[charm.replace('Unbreakable','Fragile')].acquisition2,CHARMS[charm.replace('Unbreakable','Fragile')].acquisition) );
+	}
+	else {
+		$('.modal-body').html($('.modal-body').html().replace(FRAGILE_TEXT,UNBREAKABLE_TEXT) );
+		$('.modal-body').html($('.modal-body').html().replace('<b>Price:</b> '+CHARMS[charm.replace('Unbreakable','Fragile')].price,'<b>Price:</b> '+CHARMS[charm.replace('Unbreakable','Fragile')].price2) );
+		$('.modal-body').html($('.modal-body').html().replace(CHARMS[charm.replace('Unbreakable','Fragile')].acquisition,CHARMS[charm.replace('Unbreakable','Fragile')].acquisition2) );
+	}
 }

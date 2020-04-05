@@ -111,34 +111,40 @@ const CHARMS = {
 	'Fragile_Heart': {
 		notches: 2,
 		price: 350,
+		price2: 12000,
 		location: 'Fungal Wastes',
 		description: 'Increases the health of the bearer, allowing them to take more damage.<hr>This charm is fragile, and will break if its bearer is killed.',
 		effects: [
 			'Adds two Masks of health'
 		],
 		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 350 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 280 Geo.<br>When broken, Leg Eater can repair it for 200 Geo, or for 160 Geo while wearing the Defender\'s Crest.',
+		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Heart, the player must equip it then when speaking to her, give it to her when prompted. She will eat the charm, then ask for 12000 Geo. Once the Geo is paid, she gives the player the unbreakable version of the Fragile Heart charm. The Grimm Troupe Content Pack is required.',
 		category: 'defense',
 	},
 	'Fragile_Greed': {
 		notches: 2,
 		price: 250,
+		price2: 9000,
 		location: 'Fungal Wastes',
 		description: 'Causes the bearer to find more Geo when defeating enemies.<hr>This charm is fragile, and will break if its bearer is killed.',
 		effects: [
 			'Enemies drop 20-60% more Geo'
 		],
 		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 250 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 200 Geo.<br>When broken, Leg Eater can repair it for 150 Geo, or for 120 Geo while wearing the Defender\'s Crest.',
+		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Greed, the player must equip it, and then give it to her when prompted while speaking to her. She will eat the charm, then ask for 9000 Geo. Once the Geo is paid, she gives the player the unbreakable version of the charm. The Grimm Troupe Content Pack is required.',
 		category: 'geo',
 	},
 	'Fragile_Strength': {
 		notches: 3,
 		price: 600,
+		price2: 15000,
 		location: 'Fungal Wastes',
 		description: 'Strengthens the bearer, increasing the damage they deal to enemies with their nail.<hr>This charm is fragile, and will break if its bearer is killed.',
 		effects: [
 			'Increases Nail damage by 50% rounded up'
 		],
 		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 600 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 480 Geo.<br>When broken, Leg Eater can repair it for 150350 Geo, or for 280 Geo while wearing the Defender\'s Crest.',
+		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Strength, the Knight must equip it then when speaking to her, give it to her when prompted. She will eat the charm, then ask for 15000 Geo. Once the Geo is paid, she gives the Knight the unbreakable version of the charm. The Grimm Troupe Content Pack is required.',
 		category: 'attack',
 	},
 

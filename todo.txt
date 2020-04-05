@@ -21,3 +21,5 @@ add favicon
 decorate modals with decorative imgs
 
 update readme
+
+bug: effects are spoiled?
