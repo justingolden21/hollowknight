@@ -143,16 +143,16 @@ const CHARMS = {
 	},
 
 
-	'aaa': {
-		notches: 888,
-		price: 888,
-		location: 'aaa',
-		description: 'aaa',
-		effects: [
-			'aaa'
-		],
-		acquisition: 'aaa',
-		category: 'aaa',
-	},
+	// 'aaa': {
+	// 	notches: 888,
+	// 	price: 888,
+	// 	location: 'aaa',
+	// 	description: 'aaa',
+	// 	effects: [
+	// 		'aaa'
+	// 	],
+	// 	acquisition: 'aaa',
+	// 	category: 'aaa',
+	// },
 
 }
