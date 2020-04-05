@@ -1,17 +1,19 @@
-view charms on modal, view as one large table in modal, print friendly table
 
-locations spoiler click to show, toggle switch at top to show/hide locations and abilities
+figure out:
+- figure out displaying 2 interchangable charms (other than fragiles/unbreakables) dropdown menu?
 
-url param for opening the charm modal
+filters:
+- filter by category (movement, geo, soul, attack, defense), notch cost, method of obtaining (purchase from x, purchase from y, found in z), location, or cost (more than/less than x)
+- locations spoiler click to show, toggle switch at top to show/hide locations and abilities
 
-figure out displaying 2 interchangable charms (other than fragiles/unbreakables) dropdown menu?
+modals:
+- what are charms, how to equip them/benches, how many notches, where to get more notches, overcharmed
+- view charms on modal, view as one large table in modal, print friendly table
+- charm achievements
 
-filter by category (movement, geo, soul, attack, defense), notch cost, method of obtaining (purchase from x, purchase from y, found in z), location, or cost (more than/less than x)
+misc:
+- update readme
+- url param for opening the charm modal
 
-what are charms, how to equip them, how many notches, where to get more notches, overcharmed
-
-charm achievements
-
-update readme
-
-bug: effects are spoiled?
+bugs:
+- effects are spoiled?
