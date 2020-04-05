@@ -21,6 +21,13 @@ h1 {
 	border-radius: 50%;
 }
 
+.popover-header {
+	border-radius: 0;
+}
+.popover-body {
+	display: none;
+}
+
 .modal-charm {
 	width: 64px;
 }
