@@ -43,6 +43,10 @@ function changeFragile(charm, isFragile) {
 	else
 		charm = charm.replace('Fragile','Unbreakable');
 
+	// set tab
+	$('.nav-link').removeClass('active');
+	$('.nav-link:contains('+(isFragile?'Fragile':'Unbreakable')+')').addClass('active');
+
 	console.log(charm);
 
 	// todo: set img, desc troupe info, change active tab
