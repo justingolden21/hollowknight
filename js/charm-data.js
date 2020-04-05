@@ -3,9 +3,10 @@
 const CHARMS = {
 	'Wayward_Compass': {
 		notches: 1,
-		description: 'Whispers its location to the bearer whenever a map is open.',
-		location: 'Dirtmouth',
 		price: 220,
+		location: 'Dirtmouth',
+		description: 'Whispers its location to the bearer whenever a map is open.',
+		effect: 'Shows Knight\'s location on map',
 		acquisition: 'After the first encounter with Cornifer the cartographer in Forgotten Crossroads, it can be purchased from Iselda in Dirtmouth for 220 Geo',
 	},
 
