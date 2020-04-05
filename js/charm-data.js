@@ -169,6 +169,92 @@ const CHARMS = {
 		acquisition: 'Bought from Salubra for 120 Geo in the Forgotten Crossroads.',
 		category: 'movement',
 	},
+	'Heavy_Blow': {
+		notches: 2,
+		price: 350,
+		location: 'Dirtmouth',
+		description: 'Formed from the nails of fallen warriors.<hr>Increases the force of the bearer\'s nail, causing enemies to recoil further when hit.',
+		effects: [
+			'Increases Nail attack knockback by 75%',
+			'Increases Great Slash and Dash Slash knockback by 100%',
+			'Increases Cyclone Slash knockback by 150%',
+			'Reduces amount of hits needed to stagger a Boss by 1'
+		],
+		acquisition: 'Bought from Sly for 350 Geo after bringing him the Shopkeeper\'s Key found in the Crystal Peak.',
+		category: 'attack defense',
+	},
+	'Quick_Slash': {
+		notches: 3,
+		price: 0,
+		location: 'Kingdom\'s Edge',
+		description: 'Born from imperfect, discarded nails that have fused together. The nails still long to be wielded.<hr>Allows the bearer to slash much more rapidly with their nail.',
+		effects: [
+			'Decreases Attack Duration (How long the hitbox is active) from 0.36s to 0.25s',
+			'Decreases Attack Cooldown (Total time between attacks) from 0.41s to 0.25s'
+		],
+		acquisition: 'Located in Kingdom\'s Edge, upon a massive anvil in a hidden room in front of a massive corpse known in the game files as "Ancient Nailsmith".<br>Finding it requires travelling to the very east end of Kingdom\'s Edge past Oro\'s hut and locating a breakable floor next to his training dummy. After traversing down a few levels, and looping up the west end of the section, there will be a small tunnel located within a wall leading to the Charm.',
+		category: 'attack movement',
+	},
+	'Longnail': {
+		notches: 2,
+		price: 300,
+		location: 'Forgotten Crossroads',
+		description: 'Increases the range of the bearer\'s nail, allowing them to strike foes from further away.',
+		effects: [
+			'Increases nail range by 15%'
+		],
+		acquisition: 'Bought from Salubra in the Forgotten Crossroads for 300 Geo.',
+		category: 'attack defense',
+	},
+	'Mark_of_Pride': {
+		notches: 3,
+		price: 0,
+		location: 'Funal Wastes',
+		description: 'Freely given by the Mantis Tribe to those they respect.<hr>Greatly increases the range of the bearer\'s nail, allowing them to strike foes from further away.',
+		effects: [
+			'Increases nail range by 25%'
+		],
+		acquisition: 'In the Mantis Village, in a chest in a room to the northeast of the Mantis Lords arena. This room can only be accessed after defeating the Mantis Lords.',
+		category: 'attack defense',
+	},
+	'Baldur_Shell': {
+		notches: 2,
+		price: 0,
+		location: 'Howling Cliffs',
+		description: 'Protects its bearer with a hard shell while focusing SOUL.<hr>The shell is not indestructible and will shatter if it absorbs too much damage.',
+		effects: [
+			'Block up to 4 hits while using Focus.',
+			'Can be repaired by resting at a Bench' // felt adding this was necessary
+		],
+		acquisition: 'This charm is located in the southwest portion of the Howling Cliffs, where there is a chest that drops only 1 Geo. Jumping down into the chest takes the Knight to a cave guarded by two Elder Baldurs. Defeating the one on the right opens a tunnel filled with Elder Baldur corpses that leads to the charm.',
+		category: 'defense soul',
+	},
+	'Flukenest': {
+		notches: 3,
+		price: 0,
+		location: 'Royal Waterways',
+		description: 'Living charm born in the gut of a Flukemarm.<hr>Transforms the Vengeful Spirit and Shade Soul spells into a horde of volatile baby flukes.',
+		effects: [
+			'Replaces Vengeful Spirit with 9 flukes, and Shade Soul with 16 flukes',
+			'Each fluke does 4 damage, resulting in a total damage of 36 with Vengeful Spirit and 64 with Shade Soul'
+		],
+		acquisition: 'Dropped by Flukemarm in the Royal Waterways when defeated.',
+		category: 'attack soul',
+	},
+	'Defender\'s_Crest': {
+		notches: 1,
+		price: 0,
+		location: 'Royal Waterways',
+		description: 'Unique charm bestowed by the King of Hallownest to his most loyal knight. Scratched and dirty, but still cared for.<hr>Causes the bearer to emit a heroic odour.',
+		effects: [
+			'Spawns toxic clouds that deal 1 damage per tick, the cloud lasts 2.2 seconds and a new one will spawn at the Knight\'s location every 0.2 seconds',
+			'Unlocks new interactions with certain NPCs',
+			'Leg Eater will give a 20% discount on his items and repairs, Relic Seeker Lemm will refuse to barter, and Tuk will give a free Rancid Egg' // added this
+		],
+		acquisition: 'Reward from defeating Dung Defender in the Royal Waterways.',
+		category: 'attack interaction',
+	},
+
 
 
 	// 'aaa': {
