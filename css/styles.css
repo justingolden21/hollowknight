@@ -47,8 +47,8 @@ h1 {
 	width: 64px;
 }
 
-.geo {
-	width: 16px;
+.geo, .notch {
+	width: 20px;
 }
 
 .spoiler {
