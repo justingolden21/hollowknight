@@ -4,21 +4,15 @@ locations spoiler click to show, toggle switch at top to show/hide locations and
 
 url param for opening the charm modal
 
-fix charm order
+figure out displaying 2 interchangable charms (other than fragiles/unbreakables) dropdown menu?
 
-figure out displaying fragile/unbreakable 3, and 2 interchangable ones. dropdown menu?
+filter by category (movement, geo, soul, attack, defense), notch cost, method of obtaining (purchase from x, purchase from y, found in z), location, or cost (more than/less than x)
 
-sort by ability (health, money, damage, movement etc) or notches, or method of obtaining?
-
-what are charms, how to equip them, how many notches, where tog et more notches, overcharmed
+what are charms, how to equip them, how many notches, where to get more notches, overcharmed
 
 charm achievements
 
-add popover to titles
-
 add favicon
-
-decorate modals with decorative imgs
 
 update readme
 

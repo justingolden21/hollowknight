@@ -51,9 +51,6 @@ function changeFragile(charm, isFragile) {
 	$('.nav-link').removeClass('active');
 	$('.nav-link:contains('+(isFragile?'Fragile':'Unbreakable')+')').addClass('active');
 
-	// set img
-	// $('.modal-content img.modal-charm').attr('src','img/charms/' + charm + '.png');
-
 	// set title
 	$('.modal-title').html(
 		'<img class="modal-charm" src="img/charms/' + newCharm + '.png"> ' + 
