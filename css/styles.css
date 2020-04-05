@@ -1,19 +1,14 @@
+/* basics */
 body {
-	/*font-size: 120%;*/
 	color: #000;
 	background: #000 url('https://img.wallpapersafari.com/desktop/1680/1050/16/83/WBwdPK.jpg') no-repeat;
 }
-
 h1 {
 	color: #fff;
 	display: inline;
 }
 
-hr {
-	border-color: #fff;
-	width: 240px;
-}
-
+/* charms */
 .charm, .charm-placeholder {
 	/*width: 96px;*/
 	width: 72px;
@@ -26,6 +21,7 @@ hr {
 	border-radius: 50%;
 }
 
+/* popovers */
 .popover-header {
 	border-radius: 0;
 }
@@ -33,25 +29,10 @@ hr {
 	display: none;
 }
 
+/* modals */
 .modal-charm {
 	width: 64px;
 }
-
-.geo {
-	width: 20px;
-}
-.notch {
-	width: 32px;
-}
-
-.spoiler {
-	background-color: #fff;
-}
-
-.spoiler:hover {
-	background-color: transparent;
-}
-
 .modal-content {
 	background-color: #000;
 	color: #fff;
@@ -61,13 +42,29 @@ hr {
 	color: #fff;
 	text-shadow: none;
 }
-
 .decoration {
 	display: block;
 	margin: auto;
 	width: 320px;
 }
+.geo {
+	width: 20px;
+}
+.notch {
+	width: 32px;
+}
+hr {
+	border-color: #fff;
+	width: 240px;
+}
+.spoiler {
+	background-color: #fff;
+}
+.spoiler:hover {
+	background-color: transparent;
+}
 
+/* tabs */
 .nav-item {
 	cursor: pointer;
 }
@@ -75,6 +72,7 @@ hr {
 	color: #000 !important;
 }
 
+/* media rules */
 @media (max-width: 992px) { /* md */
 	.charm {
 		width: 64px;
