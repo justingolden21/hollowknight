@@ -4,6 +4,7 @@ figure out:
 
 filters:
 - filter by category (movement, geo, soul, attack, defense), notch cost, method of obtaining (purchase from x, purchase from y, found in z), location, or cost (more than/less than x)
+- option to add filters to url param?
 - locations spoiler click to show, toggle switch at top to show/hide locations and abilities
 
 modals:
