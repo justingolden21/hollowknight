@@ -72,6 +72,12 @@ hr {
 	color: #000 !important;
 }
 
+/* buttons */
+.btn-outline-light {
+	border-radius: 0;
+	margin: 4px;
+}
+
 /* media rules */
 @media (max-width: 992px) { /* md */
 	.charm {
