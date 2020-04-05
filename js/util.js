@@ -1,6 +1,7 @@
 const format = str => str.split('_').join(' ');
 
 const getNotches = num => '<img class="notch" src="img/charm_notch.png">'.repeat(num);
+
 const getEffectList = effects => {
 	let tmp = '<ul>';
 	for(idx in effects)

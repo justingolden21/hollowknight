@@ -2,17 +2,21 @@ $( ()=> {
 	let idx = 0;
 	for(charm in CHARMS) {
 		idx++;
-		$('#charm-div').append('<img class="charm" src="img/charms/' + charm + '.png"' +
+		$('#charm-div').append(
+			'<img class="charm" src="img/charms/' + charm + '.png"' +
 			' data-toggle="popover" title="' + format(charm) + 
 			'" tabindex="0" data-charm="' + charm + '"' +
-			'" onclick="openCharm(\'' + charm + '\')">');
+			'" onclick="openCharm(\'' + charm + '\')">'
+		);
 		if(idx%10==9) {
 			$('#charm-div').append('<br class="charm-br">');
-			if(idx%20==9) {
-				$('#charm-div').append('<img class="charm-placeholder" src="img/charms/empty.png">');
-			}
+			if(idx%20==9)
+				$('#charm-div').append(
+					'<img class="charm-placeholder" src="img/charms/empty.png">'
+				);
 		}
 	}
+
 	$('[data-toggle="popover"]').popover({trigger: 'hover'});
 
 	$('.charm').keydown( (evt)=> {
