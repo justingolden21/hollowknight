@@ -12,8 +12,6 @@ what are charms, how to equip them, how many notches, where to get more notches,
 
 charm achievements
 
-add favicon
-
 update readme
 
 bug: effects are spoiled?
