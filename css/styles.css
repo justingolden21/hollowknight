@@ -9,6 +9,11 @@ h1 {
 	display: inline;
 }
 
+hr {
+	border-color: #fff;
+	width: 240px;
+}
+
 .charm, .charm-placeholder {
 	/*width: 96px;*/
 	width: 72px;
@@ -32,8 +37,11 @@ h1 {
 	width: 64px;
 }
 
-.geo, .notch {
+.geo {
 	width: 20px;
+}
+.notch {
+	width: 32px;
 }
 
 .spoiler {
