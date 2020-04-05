@@ -108,6 +108,39 @@ const CHARMS = {
 		acquisition: 'Found in King\'s Pass, the starting cavern, behind a spike filled cavern. Look for the Geo cluster in the bottom right of the pit room. Dash to cross the spikes, and continue right to find the charm.<br>Can be reached at the beginning of the game by nail pogoing on the spikes, or returned to later with the Mothwing Cloak or Mantis Claw.',
 		category: 'attack',
 	},
+	'Fragile_Heart': {
+		notches: 2,
+		price: 350,
+		location: 'Fungal Wastes',
+		description: 'Increases the health of the bearer, allowing them to take more damage.<hr>This charm is fragile, and will break if its bearer is killed.',
+		effects: [
+			'Adds two Masks of health'
+		],
+		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 350 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 280 Geo.<br>When broken, Leg Eater can repair it for 200 Geo, or for 160 Geo while wearing the Defender\'s Crest.',
+		category: 'defense',
+	},
+	'Fragile_Greed': {
+		notches: 2,
+		price: 250,
+		location: 'Fungal Wastes',
+		description: 'Causes the bearer to find more Geo when defeating enemies.<hr>This charm is fragile, and will break if its bearer is killed.',
+		effects: [
+			'Enemies drop 20-60% more Geo'
+		],
+		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 250 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 200 Geo.<br>When broken, Leg Eater can repair it for 150 Geo, or for 120 Geo while wearing the Defender\'s Crest.',
+		category: 'geo',
+	},
+	'Fragile_Strength': {
+		notches: 3,
+		price: 600,
+		location: 'Fungal Wastes',
+		description: 'Strengthens the bearer, increasing the damage they deal to enemies with their nail.<hr>This charm is fragile, and will break if its bearer is killed.',
+		effects: [
+			'Increases Nail damage by 50% rounded up'
+		],
+		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 600 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 480 Geo.<br>When broken, Leg Eater can repair it for 150350 Geo, or for 280 Geo while wearing the Defender\'s Crest.',
+		category: 'attack',
+	},
 
 
 	'aaa': {
