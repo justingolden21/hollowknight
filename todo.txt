@@ -19,3 +19,4 @@ misc:
 
 bugs:
 - effects are spoiled?
+- fix defender's crest modal
