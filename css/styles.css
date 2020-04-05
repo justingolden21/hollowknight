@@ -1,4 +1,5 @@
 body {
+	font-size: 120%;
 	color: #000;
 	background: #000 url('https://img.wallpapersafari.com/desktop/1680/1050/16/83/WBwdPK.jpg') no-repeat;
 }
@@ -34,6 +35,22 @@ h1 {
 
 .spoiler:hover {
 	background-color: transparent;
+}
+
+.modal-content {
+	background-color: #000;
+	color: #fff;
+	border-radius: 0px;
+}
+.modal-content .close {
+	color: #fff;
+	text-shadow: none;
+}
+
+.decoration {
+	display: block;
+	margin: auto;
+	height: 20px;
 }
 
 @media (max-width: 992px) { /* md */

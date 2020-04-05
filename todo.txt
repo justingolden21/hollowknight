@@ -21,6 +21,3 @@ add favicon
 decorate modals with decorative imgs
 
 update readme
-
-split js into 3 files: make-charms, charm-data, and main
-
