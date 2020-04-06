@@ -7,6 +7,10 @@ h1 {
 	color: #fff;
 	display: inline;
 }
+a {
+	color: #fff !important;
+	font-weight: bold;
+}
 
 /* charms */
 .charm, .charm-placeholder {
