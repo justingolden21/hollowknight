@@ -23,6 +23,7 @@ misc:
 notes:
 - some charms (ie kingsoul) have multiple locations
 - void heart costs 0 notches to equip
+- implement sorting by category by adding category as data- element to charms, then filtering by those
 
 bugs:
 - effects are spoiled?
