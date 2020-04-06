@@ -15,6 +15,7 @@ modals:
 misc:
 - use realfavicongenerator.net
 - SEO
+- optimize website load speed
 - url param for opening the charm modal
 - interacts well with section for charms? see "charm interactions" on the wiki
 - make clickable tags? sort by that category?
