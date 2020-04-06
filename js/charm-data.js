@@ -254,7 +254,17 @@ const CHARMS = {
 		acquisition: 'Reward from defeating Dung Defender in the Royal Waterways.',
 		category: 'attack interaction',
 	},
-
+	'Glowing_Womb': {
+		notches: 2,
+		price: 0,
+		location: 'Forgotten Crossroads',
+		description: 'Drains the SOUL of its bearer and uses it to birth hatchlings.<hr>The hatchlings have no desire to eat or live, and will sacrifice themselves to protect their parent.',
+		effects: [
+			'Spawns hatchlings for 8 SOUL each, that deal 9 damage to enemies on contact, a hatchling spawns every 4 seconds for a total of 4 hatchlings at a time'
+		],
+		acquisition: 'The Glowing Womb can be acquired in the Forgotten Crossroads after the Crystal Heart is acquired at Crystal Peak. The entrance is hidden to the right of the False Knight arena in the ceiling after a series of columns. The area where the charm is acquired is infected even before triggering Infected Crossroads. The Charm itself is found on the body of a giant Aspid Mother.<br>The area itself is littered with Aspid Hunters and Aspid Mothers, both of which will also show up in an arena where a fair number of them need to be fought before Glowing Womb can be acquired.',
+		category: 'soul attack',
+	},
 
 
 	// 'aaa': {

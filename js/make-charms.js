@@ -7,6 +7,7 @@ $( ()=> {
 			' data-toggle="popover" title="' + format(charm) + 
 			'" tabindex="0" data-charm="' + charm + '"' +
 			'" onclick="openCharm(\'' + charm.replace('\'','\\\'') + '\')">'
+				// .replace('\'','\\\'') is for defender's crest
 		);
 		if(idx%10==9) {
 			$('#charm-div').append('<br class="charm-br">');

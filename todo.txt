@@ -16,7 +16,7 @@ modals:
 misc:
 - update readme
 - url param for opening the charm modal
+- interacts well with section for charms?
 
 bugs:
 - effects are spoiled?
-- fix defender's crest modal
