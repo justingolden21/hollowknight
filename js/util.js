@@ -30,8 +30,8 @@ function openCharm(charm) {
 		'<br><br><i>' + CHARMS[charm].description + '</i>' +
 		'<br><img class="decoration" src="img/decorative_bottom.png">' +
 		'</div>' +
-		'<br><b>Acquisition:</b> <span class="spoiler">' + CHARMS[charm].acquisition + '</span><br>' +
 		'<br><b>Effects:</b> <span class="spoiler">' + getEffectList(CHARMS[charm].effects) + '</span><br>' +
+		'<br><b>Acquisition:</b> <span class="spoiler">' + CHARMS[charm].acquisition + '</span><br>' +
 		'<br><a href="https://hollowknight.fandom.com/wiki/' + charm  + '" target="_blank">Wiki</a><br>'
 	);
 	$('.modal').modal('show');
