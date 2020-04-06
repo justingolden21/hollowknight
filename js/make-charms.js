@@ -4,7 +4,8 @@ $( ()=> {
 		idx++;
 		$('#charm-div').append(
 			'<img class="charm" src="img/charms/' + charm + '.png"' +
-			' data-toggle="popover" title="' + format(charm) + 
+			' data-toggle="popover" title="' + format(charm) +
+			'" alt="' + format(charm) +
 			'" tabindex="0" data-charm="' + charm + '"' +
 			'" onclick="openCharm(\'' + charm.replace('\'','\\\'') + '\')">'
 				// .replace('\'','\\\'') is for defender's crest
