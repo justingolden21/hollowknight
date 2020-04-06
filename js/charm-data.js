@@ -1,5 +1,3 @@
-// const CHARMS = 'Baldur_Shell,Carefree_Melody,Dashmaster,Deep_Focus,Defender\'s_Crest,Dreamshield,Dream_Wielder,Flukenest,Fragile_Greed,Fragile_Heart,Fragile_Strength,Fury_of_the_Fallen,Gathering_Swarm,Glowing_Womb,Grimmchild,Grubberfly\'s_Elegy,Grubsong,Heavy_Blow,Hiveblood,Joni\'s_Blessing,Kingsoul,Lifeblood_Core,Lifeblood_Heart,Longnail,Mark_of_Pride,Nailmaster\'s_Glory,Quick_Focus,Quick_Slash,Shaman_Stone,Shape_of_Unn,Sharp_Shadow,Soul_Catcher,Soul_Eater,Spell_Twister,Spore_Shroom,Sprintmaster,Stalwart_Shell,Steady_Body,Thorns_of_Agony,Unbreakable_Greed,Unbreakable_Heart,Unbreakable_Strength,Void_Heart,Wayward_Compass,Weaversong'.split(',');
-
 const CHARMS = {
 	'Wayward_Compass': {
 		notches: 1,
@@ -239,7 +237,7 @@ const CHARMS = {
 			'Each fluke does 4 damage, resulting in a total damage of 36 with Vengeful Spirit and 64 with Shade Soul'
 		],
 		acquisition: 'Dropped by Flukemarm in the Royal Waterways when defeated.',
-		category: 'attack soul',
+		category: 'summon soul',
 	},
 	'Defender\'s_Crest': {
 		notches: 1,
@@ -252,7 +250,7 @@ const CHARMS = {
 			'Leg Eater will give a 20% discount on his items and repairs, Relic Seeker Lemm will refuse to barter, and Tuk will give a free Rancid Egg' // added this
 		],
 		acquisition: 'Reward from defeating Dung Defender in the Royal Waterways.',
-		category: 'attack interaction',
+		category: 'summon interaction',
 	},
 	'Glowing_Womb': {
 		notches: 2,
@@ -263,7 +261,7 @@ const CHARMS = {
 			'Spawns hatchlings for 8 SOUL each, that deal 9 damage to enemies on contact, a hatchling spawns every 4 seconds for a total of 4 hatchlings at a time'
 		],
 		acquisition: 'The Glowing Womb can be acquired in the Forgotten Crossroads after the Crystal Heart is acquired at Crystal Peak. The entrance is hidden to the right of the False Knight arena in the ceiling after a series of columns. The area where the charm is acquired is infected even before triggering Infected Crossroads. The Charm itself is found on the body of a giant Aspid Mother.<br>The area itself is littered with Aspid Hunters and Aspid Mothers, both of which will also show up in an arena where a fair number of them need to be fought before Glowing Womb can be acquired.',
-		category: 'soul attack',
+		category: 'summon soul',
 	},
 	'Quick_Focus': {
 		notches: 3,
@@ -296,7 +294,7 @@ const CHARMS = {
 			'Adds 2 Lifeblood masks when resting.'
 		],
 		acquisition: 'Bought from Salubra in the Forgotten Crossroads for 250 Geo.',
-		category: 'defense',
+		category: 'lifeblood',
 	},
 	'Lifeblood_Core': {
 		notches: 3,
@@ -307,7 +305,7 @@ const CHARMS = {
 			'Adds 4 Lifeblood masks when resting'
 		],
 		acquisition: 'On the left wall of the Abyss is a cave that will only open when having 15 or more Lifeblood masks, either through killing Lifeseeds or through the Lifeblood Heart and Joni\'s Blessing charms. Joni\'s Blessing also converts the extra health from Fragile Heart into Lifeblood masks. The charm is found sitting on a dais at the end of the chamber.<br>There is also an Arcane Egg in the same area. Once Lifeblood Core is picked up, the Knight will be immediately ejected from the room and the door will become permanently closed, so it is recommended to pick up the Arcane Egg first and then the charm.',
-		category: 'defense',
+		category: 'lifeblood',
 	},
 	'Joni\'s_Blessing': {
 		notches: 4,
@@ -319,7 +317,7 @@ const CHARMS = {
 			'Causes Lifeseeds to flock to the Knight instead of running away'
 		],
 		acquisition: 'Found in Joni\'s Repose in Howling Cliffs. The charm is resting on the corpse of Blue Child Joni.',
-		category: 'defense',
+		category: 'lifeblood',
 	},
 	'Grubsong': {
 		notches: 1,
@@ -367,7 +365,7 @@ const CHARMS = {
 			'Able to read certain Lore Tablets found in Fungal Wastes and one in Kingdom\'s Edge'
 		],
 		acquisition: 'This charm is located in the Fungal Wastes near a pool of acid, close to the entrances to the Queen\'s Gardens and Deepnest. Requires Mantis Claw.',
-		category: 'defense',
+		category: 'summon defense',
 	},
 	'Sharp_Shadow': {
 		notches: 2,
@@ -414,7 +412,7 @@ const CHARMS = {
 			'Reduces the attack speed of the Dream Nail from 2.4 seconds to 0.9 seconds'
 		],
 		acquisition: 'Given by Seer after gathering 500 Essence.',
-		category: 'soul',
+		category: 'soul interaction',
 	},
 	'Kingsoul': {
 		notches: 5,
@@ -453,7 +451,7 @@ const CHARMS = {
 			'Conjures a shield that slowly rotates around the Knight\'s position that will block certain projectiles and will deal 1x Nail damage when colliding with an enemy'
 		],
 		acquisition: 'Found in a room in Resting Grounds, below the Seer\'s room. Requires Grimm Troupe content pack.',
-		category: 'defense',
+		category: 'defense summon',
 	},
 	'Weaversong': {
 		notches: 2,
@@ -464,7 +462,7 @@ const CHARMS = {
 			'Summons 3 small Weaverlings that attack enemies for 3 damage per hit.'
 		],
 		acquisition: 'Found in the upper part of Weavers\' Den. Requires Grimm Troupe content pack.',
-		category: 'attack soul',
+		category: 'summon',
 	},
 	'Sprintmaster': {
 		notches: 1,
@@ -502,7 +500,7 @@ const CHARMS = {
 			'Allows access to the Grimm and Nightmare King Grimm fights'
 		],
 		acquisition: 'Grimmchild is given by Troupe Master Grimm in Dirtmouth after the Grimm Troupe has been summoned. Having Grimmchild equipped reveals three flames around Hallownest. These can be absorbed by the Grimmchild after defeating the Grimmkin Novices which guard them. Returning to Grimm after this upgrades the Grimmchild, causing it to deal 5 damage.<br>After this, three more flames can be collected which are guarded by Grimmkin Masters. Subsequently returning to Grimm will initiate a boss fight with him. Upon defeating Grimm, the Grimmchild is upgraded and can deal 8 damage.<br>Finally, three more flames which are guarded by Grimmkin Nightmares have to be collected. There is also a fourth flame in Deepnest which requires no combat to collect. Having three flames and then using the Dream Nail on Grimm starts the fight with Nightmare King Grimm. When he is defeated, the Grimmchild is in its final form and can deal 11 damage. Requires Grimm Troupe content pack.',
-		category: 'attack',
+		category: 'summon',
 	},
 
 }
