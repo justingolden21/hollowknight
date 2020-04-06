@@ -118,7 +118,7 @@ const CHARMS = {
 			'Adds two Masks of health'
 		],
 		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 350 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 280 Geo.<br>When broken, Leg Eater can repair it for 200 Geo, or for 160 Geo while wearing the Defender\'s Crest.',
-		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Heart, the player must equip it then when speaking to her, give it to her when prompted. She will eat the charm, then ask for 12000 Geo. Once the Geo is paid, she gives the player the unbreakable version of the Fragile Heart charm. The Grimm Troupe Content Pack is required.',
+		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Heart, the player must equip it then when speaking to her, give it to her when prompted. She will eat the charm, then ask for 12000 Geo. Once the Geo is paid, she gives the player the unbreakable version of the Fragile Heart charm.',
 		category: 'defense',
 	},
 	'Fragile_Greed': {
@@ -131,7 +131,7 @@ const CHARMS = {
 			'Enemies drop 20-60% more Geo'
 		],
 		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 250 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 200 Geo.<br>When broken, Leg Eater can repair it for 150 Geo, or for 120 Geo while wearing the Defender\'s Crest.',
-		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Greed, the player must equip it, and then give it to her when prompted while speaking to her. She will eat the charm, then ask for 9000 Geo. Once the Geo is paid, she gives the player the unbreakable version of the charm. The Grimm Troupe Content Pack is required.',
+		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Greed, the player must equip it, and then give it to her when prompted while speaking to her. She will eat the charm, then ask for 9000 Geo. Once the Geo is paid, she gives the player the unbreakable version of the charm.',
 		category: 'geo',
 	},
 	'Fragile_Strength': {
@@ -144,7 +144,7 @@ const CHARMS = {
 			'Increases Nail damage by 50% rounded up'
 		],
 		acquisition: 'Purchased from Leg Eater in Fungal Wastes for 600 Geo. Wearing the Defender\'s Crest will cause Leg Eater to lower the cost to 480 Geo.<br>When broken, Leg Eater can repair it for 350 Geo, or for 280 Geo while wearing the Defender\'s Crest.',
-		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Strength, the Knight must equip it then when speaking to her, give it to her when prompted. She will eat the charm, then ask for 15000 Geo. Once the Geo is paid, she gives the Knight the unbreakable version of the charm. The Grimm Troupe Content Pack is required.',
+		acquisition2: 'Once the Knight has summoned the Grimm Troupe, Divine becomes accessible in Dirtmouth. To get the unbreakable version of Fragile Strength, the Knight must equip it then when speaking to her, give it to her when prompted. She will eat the charm, then ask for 15000 Geo. Once the Geo is paid, she gives the Knight the unbreakable version of the charm.',
 		category: 'attack',
 	},
 	'Spell_Twister': {
@@ -356,18 +356,104 @@ const CHARMS = {
 		acquisition: 'Located in the Hive, below the room where the Lifeblood Icon Hive Knight is fought. Requires defeating the Hive Knight.',
 		category: 'defense soul',
 	},
+	'Spore_Shroom': {
+		notches: 1,
+		price: 0,
+		location: 'Fungal Wastes',
+		description: 'Composed of living fungal matter. Scatters spores when exposed to SOUL.<hr>When focusing SOUL, emit a spore cloud that slowly damages enemies.',
+		effects: [
+			'Focus releases a cloud of spores dealing 1 damage per tick. The cloud lasts 4.1 seconds allowing for 27 ticks of damage (There is a 4.25 second cooldown before being able to use Spore Shroom again)',
+			'Able to understand the dialogue of Mister Mushroom',
+			'Able to read certain Lore Tablets found in Fungal Wastes and one in Kingdom\'s Edge'
+		],
+		acquisition: 'This charm is located in the Fungal Wastes near a pool of acid, close to the entrances to the Queen\'s Gardens and Deepnest. Requires Mantis Claw.',
+		category: 'defense',
+	},
+	'Sharp_Shadow': {
+		notches: 2,
+		price: 0,
+		location: 'Deepnest',
+		description: 'Contains a forbidden spell that transforms shadows into deadly weapons.<hr>When using Shadow Dash, the bearer\'s body will sharpen and damage enemies.',
+		effects: [
+			'Damages enemies for 1 x Nail damage when dashing through them',
+			'When using Shade Cloak, increases dash length by 39% (Only for the single Shade Cloak dash and not regular Mothwing Cloak "cooldown" dashes)'
+		],
+		acquisition: 'Located in Deepnest, Southeast of the Hot Spring behind a Shade Gate. Requires Shade Cloak.',
+		category: 'attack movement',
+	},
+	'Shape_of_Unn': {
+		notches: 2,
+		price: 0,
+		location: 'Greenpath',
+		description: 'Reveals the form of Unn within the bearer.<hr>While focusing SOUL, the bearer will take on a new shape and can move freely to avoid enemies.',
+		effects: [
+			'Allows moving while focusing'
+		],
+		acquisition: 'Acquired from Unn beneath the Lake of Unn. Requires Isma\'s Tear.',
+		category: 'soul defense',
+	},
+	'Nailmaster\'s_Glory': {
+		notches: 1,
+		price: 0,
+		location: 'Dirtmouth',
+		description: 'Contains the passion, skill and regrets of a Nailmaster.<hr>Increases the bearer\'s mastery of Nail Arts, allowing them to focus their power faster and unleash arts sooner.',
+		effects: [
+			'Reduces the charge time of Nail Arts to 0.75 seconds (base 1.75, dif -1).'
+		],
+		acquisition: 'Given by Sly after receiving all 3 Nail Arts from the Nailmasters: Nailmaster Oro, Nailmaster Mato, Nailmaster Sheo',
+		category: 'attack',
+	},
+	'Dream_Wielder': {
+		notches: 1,
+		price: 0,
+		location: 'Resting Grounds',
+		description: 'Transient charm created for those who wield the Dream Nail and collect Essence.<hr>Allows the bearer to charge the Dream Nail faster and collect more SOUL when striking foes.',
+		effects: [
+			'Gain +33 additional SOUL when hitting enemies with the Dream Nail (33 to 66)',
+			'Doubles the likelihood of receiving Essence when killing enemies',
+			'Reduces the attack speed of the Dream Nail from 2.4 seconds to 0.9 seconds'
+		],
+		acquisition: 'Given by Seer after gathering 500 Essence.',
+		category: 'soul',
+	},
+	'Kingsoul': {
+		notches: 5,
+		price: 0,
+		location: 'Queen\'s Gardens,White Palace',
+		description: 'Holy charm symbolising a union between higher beings. The bearer will slowly absorb the limitless SOUL contained within.<br>Opens the way to a birthplace.',
+		effects: [
+			'Slowly generates 4 SOUL every 2 seconds',
+			'Opens a secret area within the Abyss'
+		],
+		acquisition: 'Kingsoul is obtained after getting both White Fragments. The left half of Kingsoul is given by the White Lady in Queen\'s Gardens, the right one is taken off the body of the Pale King after completing the White Palace.<br>After getting both halves, the Kingsoul is automatically created and replaces the slot where the half of the Kingsoul previously resided.',
+		category: 'soul',
+	},
+	'Void_Heart': {
+		notches: 0,
+		price: 0,
+		location: 'The Abyss',
+		description: 'An emptiness that was hidden within, now unconstrained. Unifies the void under the bearer\'s will.<hr>This charm is a part of its bearer and can not be unequipped.',
+		effects: [
+			'Unlocks 4 endings',
+			'Prevents the non-Void Heart ending for the save file',
+			'Renders the Siblings, Void Tendrils and Shade passive',
+			'Allows access to the Godmaster Icon Pantheon of Hallownest'
+		],
+		acquisition: 'Found in a secret area at the bottom of the Abyss known as Birthplace. The area\'s entrance will only open if the Kingsoul charm is equipped. At the end of the area is an egg which, upon being hit with the Awoken Dream Nail, reveals a memory of the Knight involving Vessels and the Pale King. It is after traversing this memory that the Kingsoul is changed into the Void Heart.',
+		category: 'TODO',
+	},
 
 
-	// 'aaa': {
-	// 	notches: 888,
-	// 	price: 888,
-	// 	location: 'aaa',
-	// 	description: 'aaa',
-	// 	effects: [
-	// 		'aaa'
-	// 	],
-	// 	acquisition: 'aaa',
-	// 	category: 'aaa',
-	// },
+	'aaa': {
+		notches: 888,
+		price: 888,
+		location: 'aaa',
+		description: 'aaa',
+		effects: [
+			'aaa'
+		],
+		acquisition: 'aaa',
+		category: 'aaa',
+	},
 
 }

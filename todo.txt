@@ -16,8 +16,12 @@ modals:
 misc:
 - update readme
 - url param for opening the charm modal
-- interacts well with section for charms?
-- more categories? (lifeblood, summons)
+- interacts well with section for charms? see "charm interactions" on the wiki
+- more categories? (lifeblood, summons, dream, unlock(for kingsoul, defender's crest, void heart...), unequipable (void heart) )
+
+notes:
+- some charms (ie kingsoul) have multiple locations
+- void heart costs 0 notches to equip
 
 bugs:
 - effects are spoiled?
