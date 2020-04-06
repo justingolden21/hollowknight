@@ -20,13 +20,13 @@ Something wrong? Have an idea? Contact me at [contact@justingolden.me](mailto:co
 
 Check out the [todo list](https://github.com/justingolden21/hollowknight/blob/master/todo.txt)
 
-### Made With
+### Credits
 
 Website by [Justin Golden](https://justingolden.me)
 
 Using data and images from the [wiki](https://hollowknight.fandom.com/wiki/Category:Charms) and the [official website](https://hollowknight.com)
 
-Made with [jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/), [Popper JS](https://popper.js.org/), and [FontAwesome](https://fontawesome.com/)
+Made with [jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/), [Popper JS](https://popper.js.org/), [FontAwesome](https://fontawesome.com/), and [ImgBot](https://imgbot.net/)
 
 ### Legal
 
