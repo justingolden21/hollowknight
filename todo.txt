@@ -23,6 +23,7 @@ notes:
 - some charms (ie kingsoul) have multiple locations
 - void heart costs 0 notches to equip
 - implement sorting by category by adding category as data- element to charms, then filtering by those
+- add interactions with other charms by having a string such as "{Charm:Wayward_Compass}" that is meant to be replaced with the image and link for that charm
 
 bugs:
 - effects are spoiled?
