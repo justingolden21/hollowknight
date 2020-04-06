@@ -14,6 +14,9 @@ h1 {
 	width: 72px;
 	margin: 4px;	
 	padding: 4px;
+
+	/* for debugging */
+	/*border: 2px solid red;*/
 }
 .charm:hover, .charm:focus {
 	background-color: #fff;
