@@ -26,7 +26,7 @@ Website by [Justin Golden](https://justingolden.me)
 
 Using data and images from the [wiki](https://hollowknight.fandom.com/wiki/Category:Charms) and the [official website](https://hollowknight.com)
 
-Made with [jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/), [Popper JS](https://popper.js.org/), [FontAwesome](https://fontawesome.com/), and [ImgBot](https://imgbot.net/)
+Made with [jQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/), [Popper JS](https://popper.js.org/), and [FontAwesome](https://fontawesome.com/). Images optimized with [ImgBot](https://imgbot.net/) and [Kraken.io](https://kraken.io/web-interface)
 
 ### Legal
 
