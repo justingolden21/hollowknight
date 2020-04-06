@@ -1,4 +1,11 @@
 const format = str => str.split('_').join(' ');
+const capitalize = str => str[0].toUpperCase() + str.slice(1).toLowerCase();
+const capitalizeEach = str => {
+	let rtn = '', words = str.split(' ');
+	for(word in words)
+		rtn += capitalize(words[word]) + ' ';
+	return rtn.slice(0,-1);
+}
 
 const getNotches = num => '<img class="notch" src="img/charm_notch.png">'.repeat(num);
 
@@ -30,8 +37,9 @@ function openCharm(charm) {
 		'<br><br><i>' + CHARMS[charm].description + '</i>' +
 		'<br><img class="decoration" src="img/decorative_bottom.png">' +
 		'</div>' +
-		'<br><b>Effects:</b> <span class="spoiler">' + getEffectList(CHARMS[charm].effects) + '</span><br>' +
-		'<br><b>Acquisition:</b><br> <span class="spoiler">' + CHARMS[charm].acquisition + '</span><br>' +
+		'<br><b>Effects:</b> <span class="spoiler">' + getEffectList(CHARMS[charm].effects) + '</span>' +
+		'<br><b>Tags:</b> <i>#' + capitalizeEach(CHARMS[charm].category).split(' ').join(' #') + '</i>' +
+		'<br><br><b>Acquisition:</b><br> <span class="spoiler">' + CHARMS[charm].acquisition + '</span><br>' +
 		'<br><a href="https://hollowknight.fandom.com/wiki/' + charm  + '" target="_blank">Wiki</a><br>'
 	);
 	$('.modal').modal('show');

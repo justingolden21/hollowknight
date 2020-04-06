@@ -18,6 +18,7 @@ misc:
 - url param for opening the charm modal
 - interacts well with section for charms? see "charm interactions" on the wiki
 - more categories? (lifeblood, summons, dream, unequipable (void heart) )
+- make clickable tags? sort by that category?
 
 notes:
 - some charms (ie kingsoul) have multiple locations
