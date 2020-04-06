@@ -426,7 +426,7 @@ const CHARMS = {
 			'Opens a secret area within the Abyss'
 		],
 		acquisition: 'Kingsoul is obtained after getting both White Fragments. The left half of Kingsoul is given by the White Lady in Queen\'s Gardens, the right one is taken off the body of the Pale King after completing the White Palace.<br>After getting both halves, the Kingsoul is automatically created and replaces the slot where the half of the Kingsoul previously resided.',
-		category: 'soul',
+		category: 'soul interaction',
 	},
 	'Void_Heart': {
 		notches: 0,
@@ -440,7 +440,7 @@ const CHARMS = {
 			'Allows access to the Godmaster Icon Pantheon of Hallownest'
 		],
 		acquisition: 'Found in a secret area at the bottom of the Abyss known as Birthplace. The area\'s entrance will only open if the Kingsoul charm is equipped. At the end of the area is an egg which, upon being hit with the Awoken Dream Nail, reveals a memory of the Knight involving Vessels and the Pale King. It is after traversing this memory that the Kingsoul is changed into the Void Heart.',
-		category: 'TODO',
+		category: 'interaction',
 	},
 
 
