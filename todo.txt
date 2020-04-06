@@ -3,7 +3,7 @@ figure out:
 - figure out displaying 2 interchangable charms (other than fragiles/unbreakables) dropdown menu?
 
 filters:
-- filter by category (movement, geo, soul, attack, defense), notch cost, method of obtaining (purchase from x, purchase from y, found in z), location, or cost (more than/less than x)
+- filter by category (movement, geo, soul, attack, defense), notch cost, method of obtaining (purchase from x, purchase from y, found in z, rescure x grubs), location, or cost (more than/less than x)
 - option to add filters to url param?
 - option to filter by category with "or" or "and" for either category or must contain all categories
 - locations spoiler click to show, toggle switch at top to show/hide locations and abilities
@@ -17,6 +17,7 @@ misc:
 - update readme
 - url param for opening the charm modal
 - interacts well with section for charms?
+- more categories? (lifeblood, summons)
 
 bugs:
 - effects are spoiled?

@@ -265,6 +265,97 @@ const CHARMS = {
 		acquisition: 'The Glowing Womb can be acquired in the Forgotten Crossroads after the Crystal Heart is acquired at Crystal Peak. The entrance is hidden to the right of the False Knight arena in the ceiling after a series of columns. The area where the charm is acquired is infected even before triggering Infected Crossroads. The Charm itself is found on the body of a giant Aspid Mother.<br>The area itself is littered with Aspid Hunters and Aspid Mothers, both of which will also show up in an arena where a fair number of them need to be fought before Glowing Womb can be acquired.',
 		category: 'soul attack',
 	},
+	'Quick_Focus': {
+		notches: 3,
+		price: 800,
+		location: 'Forgotten Crossroads',
+		description: 'A charm containing a crystal lens.<hr>Increases the speed of focusing SOUL, allowing the bearer to heal damage faster.',
+		effects: [
+			'Focus casts twice as fast'
+		],
+		acquisition: 'Bought from Salubra in the Forgotten Crossroads for 800 Geo.',
+		category: 'soul',
+	},
+	'Deep_Focus': {
+		notches: 4,
+		price: 0,
+		location: 'Crystal Peak',
+		description: 'Naturally formed within a crystal over a long period. Draws in SOUL from the surrounding air.<hr>The bearer will focus SOUL at a slower rate, but the healing effect will double.',
+		effects: [
+			'Focus heals 2 masks of Health while decreasing Focus speed by 65%'
+		],
+		acquisition: 'Found in Crystal Peak in a hidden cave made entirely of crystals.<br>Below the area where Cornifer can be found, look for a Husk Miner mining a wall. Break the wall to reveal the secret area. Requires Crystal Heart.',
+		category: 'soul',
+	},
+	'Lifeblood_Heart': {
+		notches: 2,
+		price: 250,
+		location: 'Forgotten Crossroads',
+		description: 'Contains a living core that seeps precious lifeblood.<hr>When resting, the bearer will gain a coating of lifeblood that protects from a modest amount of damage.',
+		effects: [
+			'Adds 2 Lifeblood masks when resting.'
+		],
+		acquisition: 'Bought from Salubra in the Forgotten Crossroads for 250 Geo.',
+		category: 'defense',
+	},
+	'Lifeblood_Core': {
+		notches: 3,
+		price: 0,
+		location: 'The Abyss',
+		description: 'Contains a living core that bleeds precious lifeblood.<hr>When resting, the bearer will gain a coating of lifeblood that protects from a large amount of damage.',
+		effects: [
+			'Adds 4 Lifeblood masks when resting'
+		],
+		acquisition: 'On the left wall of the Abyss is a cave that will only open when having 15 or more Lifeblood masks, either through killing Lifeseeds or through the Lifeblood Heart and Joni\'s Blessing charms. Joni\'s Blessing also converts the extra health from Fragile Heart into Lifeblood masks. The charm is found sitting on a dais at the end of the chamber.<br>There is also an Arcane Egg in the same area. Once Lifeblood Core is picked up, the Knight will be immediately ejected from the room and the door will become permanently closed, so it is recommended to pick up the Arcane Egg first and then the charm.',
+		category: 'defense',
+	},
+	'Joni\'s_Blessing': {
+		notches: 4,
+		price: 0,
+		location: 'Howling Cliffs',
+		description: 'Blessed by Joni, the kindly heretic. Transfigures vital fluids into blue lifeblood.<hr>The bearer will have a healthier shell and can take more damage, but they will not be able to heal themselves by focusing SOUL.',
+		effects: [
+			'Increase HP by 40% (rounded down) + 1, all masks become Lifeblood',
+			'Causes Lifeseeds to flock to the Knight instead of running away'
+		],
+		acquisition: 'Found in Joni\'s Repose in Howling Cliffs. The charm is resting on the corpse of Blue Child Joni.',
+		category: 'defense',
+	},
+	'Grubsong': {
+		notches: 1,
+		price: 0,
+		location: 'Forgotten Crossroads',
+		description: 'Contains the gratitude of freed grubs.<hr>Gain SOUL when taking damage.',
+		effects: [
+			'Gain 15 SOUL when taking damage'
+		],
+		acquisition: 'Gifted by the Grubfather after 10 Grubs have been freed.',
+		category: 'soul',
+	},
+	'Grubberfly\'s_Elegy': {
+		notches: 3,
+		price: 0,
+		location: 'Forgotten Crossroads',
+		description: 'Contains the gratitude of grubs who will move to the next stage of their lives. Imbues weapons with a holy strength.<hr>When the bearer is at full health, they will fire beams of white-hot energy from their nail.',
+		effects: [
+			'When at full HP, Nail attacks shoot a projectile dealing 50% (rounded down) Nail damage per hit.',
+			'Damage: 2/4/6/8/10 (Nail upgrades 0/1/2/3/4)'
+		],
+		acquisition: 'Gifted by Grubfather after freeing all 46 Grubs.',
+		category: 'attack',
+	},
+	'Hiveblood': {
+		notches: 4,
+		price: 0,
+		location: 'The Hive',
+		description: 'Golden nugget of the Hive\'s precious hardened nectar.<hr>Heals the bearer\'s wounds over time, allowing them to regain health without focusing SOUL.',
+		effects: [
+			'Passively heals the last unit of health lost after 12 seconds without taking further damage',
+			'Makes the enemies inside the Hive passive'
+		],
+		acquisition: 'Located in the Hive, below the room where the Lifeblood Icon Hive Knight is fought. Requires defeating the Hive Knight.',
+		category: 'defense soul',
+	},
 
 
 	// 'aaa': {
