@@ -1,6 +1,5 @@
-
-figure out:
-- figure out displaying 2 interchangable charms (other than fragiles/unbreakables) dropdown menu?
+maybe:
+- display kingsong/grimm charm set as tabs
 
 filters:
 - filter by category (movement, geo, soul, attack, defense), notch cost, method of obtaining (purchase from x, purchase from y, found in z, rescure x grubs), location, or cost (more than/less than x)

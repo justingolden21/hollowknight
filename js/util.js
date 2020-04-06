@@ -17,11 +17,11 @@ const getEffectList = effects => {
 };
 
 function openCharm(charm) {
-	$('.modal-title').html(
+	$('#charm-modal .modal-title').html(
 		'<img class="modal-charm" src="img/charms/' + charm + '.png"> ' + 
 		format(charm) 
 	);
-	$('.modal-body').html(
+	$('#charm-modal .modal-body').html(
 		'<div class="text-center">' +
 		(charm.indexOf('Fragile')!=-1?
 			'<ul class="nav nav-tabs">' +
@@ -42,8 +42,8 @@ function openCharm(charm) {
 		'<br><br><b>Acquisition:</b><br> <span class="spoiler">' + CHARMS[charm].acquisition + '</span><br>' +
 		'<br><a href="https://hollowknight.fandom.com/wiki/' + charm  + '" target="_blank">Wiki</a><br>'
 	);
-	$('.modal').modal('show');
-	$('.modal .close').focus();
+	$('#charm-modal.modal').modal('show');
+	$('#charm-modal.modal .close').focus();
 }
 
 const FRAGILE_TEXT = 'This charm is fragile, and will break if its bearer is killed.';
@@ -61,20 +61,20 @@ function changeFragile(charm, isFragile) {
 	$('.nav-link:contains('+(isFragile?'Fragile':'Unbreakable')+')').addClass('active');
 
 	// set title
-	$('.modal-title').html(
+	$('#charm-modal .modal-title').html(
 		'<img class="modal-charm" src="img/charms/' + newCharm + '.png"> ' + 
 		format(newCharm) 
 	);
 
 	// set description, price, and acquisition
 	if(isFragile) {
-		$('.modal-body').html($('.modal-body').html().replace(UNBREAKABLE_TEXT,FRAGILE_TEXT) );
-		$('.modal-body').html($('.modal-body').html().replace('<b>Price:</b> '+CHARMS[charm].price2,'<b>Price:</b> '+CHARMS[charm].price) );
-		$('.modal-body').html($('.modal-body').html().replace(CHARMS[charm].acquisition2,CHARMS[charm].acquisition) );
+		$('#charm-modal .modal-body').html($('#charm-modal .modal-body').html().replace(UNBREAKABLE_TEXT,FRAGILE_TEXT) );
+		$('#charm-modal .modal-body').html($('#charm-modal .modal-body').html().replace('<b>Price:</b> '+CHARMS[charm].price2,'<b>Price:</b> '+CHARMS[charm].price) );
+		$('#charm-modal .modal-body').html($('#charm-modal .modal-body').html().replace(CHARMS[charm].acquisition2,CHARMS[charm].acquisition) );
 	}
 	else {
-		$('.modal-body').html($('.modal-body').html().replace(FRAGILE_TEXT,UNBREAKABLE_TEXT) );
-		$('.modal-body').html($('.modal-body').html().replace('<b>Price:</b> '+CHARMS[charm].price,'<b>Price:</b> '+CHARMS[charm].price2) );
-		$('.modal-body').html($('.modal-body').html().replace(CHARMS[charm].acquisition,CHARMS[charm].acquisition2) );
+		$('#charm-modal .modal-body').html($('#charm-modal .modal-body').html().replace(FRAGILE_TEXT,UNBREAKABLE_TEXT) );
+		$('#charm-modal .modal-body').html($('#charm-modal .modal-body').html().replace('<b>Price:</b> '+CHARMS[charm].price,'<b>Price:</b> '+CHARMS[charm].price2) );
+		$('#charm-modal .modal-body').html($('#charm-modal .modal-body').html().replace(CHARMS[charm].acquisition,CHARMS[charm].acquisition2) );
 	}
 }
