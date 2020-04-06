@@ -6,7 +6,7 @@ $( ()=> {
 			'<img class="charm" src="img/charms/' + charm + '.png"' +
 			' data-toggle="popover" title="' + format(charm) + 
 			'" tabindex="0" data-charm="' + charm + '"' +
-			'" onclick="openCharm(\'' + charm + '\')">'
+			'" onclick="openCharm(\'' + charm.replace('\'','\\\'') + '\')">'
 		);
 		if(idx%10==9) {
 			$('#charm-div').append('<br class="charm-br">');
