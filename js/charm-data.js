@@ -83,27 +83,38 @@ const CHARMS = {
 		acquisition: 'Found beneath a statue below the Mantis Village in the Fungal Wastes, near the entrance to the Royal Waterways.',
 		category: 'movement',
 	},
-	'Thorns_of_Agony': {
+	'Sprintmaster': {
+		notches: 1,
+		price: 400,
+		location: 'Dirtmouth',
+		description: 'Bears the likeness of a strange bug known only as \'The Sprintmaster\'.<hr>Increases the running speed of the bearer, allowing them to avoid danger or overtake rivals.',
+		effects: [
+			'Increases run speed by ~20% (base 8.3, charm 10.0, dif -1.7)'
+		],
+		acquisition: 'Bought from Sly in Dirtmouth after acquiring the Shopkeeper\'s Key for 400 Geo. Requires Grimm Troupe content pack.',
+		category: 'movement',
+	},
+	'Grubsong': {
 		notches: 1,
 		price: 0,
-		location: 'Greenpath',
-		description: 'Senses the pain of its bearer and lashes out at the world around them.<hr>When taking damage, sprout thorny vines that damage nearby foes.',
+		location: 'Forgotten Crossroads',
+		description: 'Contains the gratitude of freed grubs.<hr>Gain SOUL when taking damage.',
 		effects: [
-			'Damages nearby enemies for up to 2x base Nail damage when hit'
+			'Gain 15 SOUL when taking damage'
 		],
-		acquisition: 'Found in Greenpath in a maze of thorns. Requires Mothwing Cloak to reach.',
-		category: 'defense attack',
+		acquisition: 'Gifted by the Grubfather after 10 Grubs have been freed.',
+		category: 'soul',
 	},
-	'Fury_of_the_Fallen': {
-		notches: 2,
+	'Grubberfly\'s_Elegy': {
+		notches: 3,
 		price: 0,
-		location: 'King\'s Pass',
-		description: 'Embodies the fury and heroism that comes upon those who are about to die.<hr>When close to death, the bearer\'s strength will increase.',
+		location: 'Forgotten Crossroads',
+		description: 'Contains the gratitude of grubs who will move to the next stage of their lives. Imbues weapons with a holy strength.<hr>When the bearer is at full health, they will fire beams of white-hot energy from their nail.',
 		effects: [
-			'Increases Nail damage by 75% when on 1 HP',
-			'This effect is also applied to Great Slash and Dash Slash (but not to Cyclone Slash)'
+			'When at full HP, Nail attacks shoot a projectile dealing 50% (rounded down) Nail damage per hit.',
+			'Damage: 2/4/6/8/10 (Nail upgrades 0/1/2/3/4)'
 		],
-		acquisition: 'Found in King\'s Pass, the starting cavern, behind a spike filled cavern. Look for the Geo cluster in the bottom right of the pit room. Dash to cross the spikes, and continue right to find the charm.<br>Can be reached at the beginning of the game by nail pogoing on the spikes, or returned to later with the Mothwing Cloak or Mantis Claw.',
+		acquisition: 'Gifted by Grubfather after freeing all 46 Grubs.',
 		category: 'attack',
 	},
 	'Fragile_Heart': {
@@ -215,6 +226,29 @@ const CHARMS = {
 		acquisition: 'In the Mantis Village, in a chest in a room to the northeast of the Mantis Lords arena. This room can only be accessed after defeating the Mantis Lords.',
 		category: 'attack defense',
 	},
+	'Fury_of_the_Fallen': {
+		notches: 2,
+		price: 0,
+		location: 'King\'s Pass',
+		description: 'Embodies the fury and heroism that comes upon those who are about to die.<hr>When close to death, the bearer\'s strength will increase.',
+		effects: [
+			'Increases Nail damage by 75% when on 1 HP',
+			'This effect is also applied to Great Slash and Dash Slash (but not to Cyclone Slash)'
+		],
+		acquisition: 'Found in King\'s Pass, the starting cavern, behind a spike filled cavern. Look for the Geo cluster in the bottom right of the pit room. Dash to cross the spikes, and continue right to find the charm.<br>Can be reached at the beginning of the game by nail pogoing on the spikes, or returned to later with the Mothwing Cloak or Mantis Claw.',
+		category: 'attack',
+	},
+	'Thorns_of_Agony': {
+		notches: 1,
+		price: 0,
+		location: 'Greenpath',
+		description: 'Senses the pain of its bearer and lashes out at the world around them.<hr>When taking damage, sprout thorny vines that damage nearby foes.',
+		effects: [
+			'Damages nearby enemies for up to 2x base Nail damage when hit'
+		],
+		acquisition: 'Found in Greenpath in a maze of thorns. Requires Mothwing Cloak to reach.',
+		category: 'defense attack',
+	},
 	'Baldur_Shell': {
 		notches: 2,
 		price: 0,
@@ -319,29 +353,6 @@ const CHARMS = {
 		acquisition: 'Found in Joni\'s Repose in Howling Cliffs. The charm is resting on the corpse of Blue Child Joni.',
 		category: 'lifeblood',
 	},
-	'Grubsong': {
-		notches: 1,
-		price: 0,
-		location: 'Forgotten Crossroads',
-		description: 'Contains the gratitude of freed grubs.<hr>Gain SOUL when taking damage.',
-		effects: [
-			'Gain 15 SOUL when taking damage'
-		],
-		acquisition: 'Gifted by the Grubfather after 10 Grubs have been freed.',
-		category: 'soul',
-	},
-	'Grubberfly\'s_Elegy': {
-		notches: 3,
-		price: 0,
-		location: 'Forgotten Crossroads',
-		description: 'Contains the gratitude of grubs who will move to the next stage of their lives. Imbues weapons with a holy strength.<hr>When the bearer is at full health, they will fire beams of white-hot energy from their nail.',
-		effects: [
-			'When at full HP, Nail attacks shoot a projectile dealing 50% (rounded down) Nail damage per hit.',
-			'Damage: 2/4/6/8/10 (Nail upgrades 0/1/2/3/4)'
-		],
-		acquisition: 'Gifted by Grubfather after freeing all 46 Grubs.',
-		category: 'attack',
-	},
 	'Hiveblood': {
 		notches: 4,
 		price: 0,
@@ -401,6 +412,17 @@ const CHARMS = {
 		acquisition: 'Given by Sly after receiving all 3 Nail Arts from the Nailmasters: Nailmaster Oro, Nailmaster Mato, Nailmaster Sheo',
 		category: 'attack',
 	},
+	'Weaversong': {
+		notches: 2,
+		price: 0,
+		location: 'Deepnest',
+		description: 'Silken charm containing a song of farewell, left by the Weavers who departed Hallownest for their old home.<hr>Summons weaverlings to give the lonely bearer some companionship and protection.',
+		effects: [
+			'Summons 3 small Weaverlings that attack enemies for 3 damage per hit.'
+		],
+		acquisition: 'Found in the upper part of Weavers\' Den. Requires Grimm Troupe content pack.',
+		category: 'summon',
+	},
 	'Dream_Wielder': {
 		notches: 1,
 		price: 0,
@@ -414,6 +436,31 @@ const CHARMS = {
 		acquisition: 'Given by Seer after gathering 500 Essence.',
 		category: 'soul interaction',
 	},
+	'Dreamshield': {
+		notches: 3,
+		price: 0,
+		location: 'Resting Grounds',
+		description: 'Defensive charm once wielded by a tribe that could shape dreams.<hr>Conjures a shield that follows the bearer and attempts to protect them.',
+		effects: [
+			'Conjures a shield that slowly rotates around the Knight\'s position that will block certain projectiles and will deal 1x Nail damage when colliding with an enemy'
+		],
+		acquisition: 'Found in a room in Resting Grounds, below the Seer\'s room. Requires Grimm Troupe content pack.',
+		category: 'defense summon',
+	},
+	'Grimmchild': {
+		notches: 2,
+		price: 0,
+		location: 'Dirtmouth',
+		description: 'Worn by those who take part in the Grimm Troupe\'s Ritual.<hr>The bearer must seek the Grimmkin and collect their flames. Uncollected flames will appear on the bearer\'s map. <hr><details><summary>After defeating Nightmare King Grimm:</summary>Symbol of a completed ritual.<hr>Contains a living, scarlet flame.</details>',
+		effects: [
+			'Marks uncollected flames on the map',
+			'Allows access to the Grimmkin',
+			'Summons a flying companion that will deal varied amounts of damage depending on the level of the Grimmchild',
+			'Allows access to the Grimm and Nightmare King Grimm fights'
+		],
+		acquisition: 'Grimmchild is given by Troupe Master Grimm in Dirtmouth after the Grimm Troupe has been summoned. Having Grimmchild equipped reveals three flames around Hallownest. These can be absorbed by the Grimmchild after defeating the Grimmkin Novices which guard them. Returning to Grimm after this upgrades the Grimmchild, causing it to deal 5 damage.<br>After this, three more flames can be collected which are guarded by Grimmkin Masters. Subsequently returning to Grimm will initiate a boss fight with him. Upon defeating Grimm, the Grimmchild is upgraded and can deal 8 damage.<br>Finally, three more flames which are guarded by Grimmkin Nightmares have to be collected. There is also a fourth flame in Deepnest which requires no combat to collect. Having three flames and then using the Dream Nail on Grimm starts the fight with Nightmare King Grimm. When he is defeated, the Grimmchild is in its final form and can deal 11 damage. Requires Grimm Troupe content pack.',
+		category: 'summon',
+	},
 	'Kingsoul': {
 		notches: 5,
 		price: 0,
@@ -425,6 +472,19 @@ const CHARMS = {
 		],
 		acquisition: 'Kingsoul is obtained after getting both White Fragments. The left half of Kingsoul is given by the White Lady in Queen\'s Gardens, the right one is taken off the body of the Pale King after completing the White Palace.<br>After getting both halves, the Kingsoul is automatically created and replaces the slot where the half of the Kingsoul previously resided.',
 		category: 'soul interaction',
+	},
+	'Carefree_Melody': {
+		notches: 3,
+		price: 0,
+		location: 'Dirtmouth',
+		description: 'Token commemorating the start of a friendship.<hr>Contains a song of protection that may defend the bearer from damage.',
+		effects: [
+			'Has a chance to block incoming damage, activates about 22.4% of the time.',
+			'The odds of the charm activating increase with each hit taken since it last blocked damage: 0 hits : 0%, 1 hit: 10%, 2 hits: 20%, 3 hits: 30%, 4 hits: 50%, 5 hits: 70%, 6 hits: 80%, 7+ hits: 90%', // added this
+			'This charm takes up the spot that Grimmchild was in previously.' // added this
+		],
+		acquisition: 'After banishing the Grimm Troupe, the charm can be acquired from Nymm by talking to him in Dirtmouth. Requires Grimm Troupe content pack.',
+		category: 'defense',
 	},
 	'Void_Heart': {
 		notches: 0,
@@ -441,66 +501,4 @@ const CHARMS = {
 		acquisition: 'Found in a secret area at the bottom of the Abyss known as Birthplace. The area\'s entrance will only open if the Kingsoul charm is equipped. At the end of the area is an egg which, upon being hit with the Awoken Dream Nail, reveals a memory of the Knight involving Vessels and the Pale King. It is after traversing this memory that the Kingsoul is changed into the Void Heart.',
 		category: 'interaction',
 	},
-
-	'Dreamshield': {
-		notches: 3,
-		price: 0,
-		location: 'Resting Grounds',
-		description: 'Defensive charm once wielded by a tribe that could shape dreams.<hr>Conjures a shield that follows the bearer and attempts to protect them.',
-		effects: [
-			'Conjures a shield that slowly rotates around the Knight\'s position that will block certain projectiles and will deal 1x Nail damage when colliding with an enemy'
-		],
-		acquisition: 'Found in a room in Resting Grounds, below the Seer\'s room. Requires Grimm Troupe content pack.',
-		category: 'defense summon',
-	},
-	'Weaversong': {
-		notches: 2,
-		price: 0,
-		location: 'Deepnest',
-		description: 'Silken charm containing a song of farewell, left by the Weavers who departed Hallownest for their old home.<hr>Summons weaverlings to give the lonely bearer some companionship and protection.',
-		effects: [
-			'Summons 3 small Weaverlings that attack enemies for 3 damage per hit.'
-		],
-		acquisition: 'Found in the upper part of Weavers\' Den. Requires Grimm Troupe content pack.',
-		category: 'summon',
-	},
-	'Sprintmaster': {
-		notches: 1,
-		price: 400,
-		location: 'Dirtmouth',
-		description: 'Bears the likeness of a strange bug known only as \'The Sprintmaster\'.<hr>Increases the running speed of the bearer, allowing them to avoid danger or overtake rivals.',
-		effects: [
-			'Increases run speed by ~20% (base 8.3, charm 10.0, dif -1.7)'
-		],
-		acquisition: 'Bought from Sly in Dirtmouth after acquiring the Shopkeeper\'s Key for 400 Geo. Requires Grimm Troupe content pack.',
-		category: 'movement',
-	},
-	'Carefree_Melody': {
-		notches: 3,
-		price: 0,
-		location: 'Dirtmouth',
-		description: 'Token commemorating the start of a friendship.<hr>Contains a song of protection that may defend the bearer from damage.',
-		effects: [
-			'Has a chance to block incoming damage, activates about 22.4% of the time.',
-			'The odds of the charm activating increase with each hit taken since it last blocked damage: 0 hits : 0%, 1 hit: 10%, 2 hits: 20%, 3 hits: 30%, 4 hits: 50%, 5 hits: 70%, 6 hits: 80%, 7+ hits: 90%', // added this
-			'This charm takes up the spot that Grimmchild was in previously.' // added this
-		],
-		acquisition: 'After banishing the Grimm Troupe, the charm can be acquired from Nymm by talking to him in Dirtmouth. Requires Grimm Troupe content pack.',
-		category: 'defense',
-	},
-	'Grimmchild': {
-		notches: 2,
-		price: 0,
-		location: 'Dirtmouth',
-		description: 'Worn by those who take part in the Grimm Troupe\'s Ritual.<hr>The bearer must seek the Grimmkin and collect their flames. Uncollected flames will appear on the bearer\'s map. <hr><details><summary>After defeating Nightmare King Grimm:</summary>Symbol of a completed ritual.<hr>Contains a living, scarlet flame.</details>',
-		effects: [
-			'Marks uncollected flames on the map',
-			'Allows access to the Grimmkin',
-			'Summons a flying companion that will deal varied amounts of damage depending on the level of the Grimmchild',
-			'Allows access to the Grimm and Nightmare King Grimm fights'
-		],
-		acquisition: 'Grimmchild is given by Troupe Master Grimm in Dirtmouth after the Grimm Troupe has been summoned. Having Grimmchild equipped reveals three flames around Hallownest. These can be absorbed by the Grimmchild after defeating the Grimmkin Novices which guard them. Returning to Grimm after this upgrades the Grimmchild, causing it to deal 5 damage.<br>After this, three more flames can be collected which are guarded by Grimmkin Masters. Subsequently returning to Grimm will initiate a boss fight with him. Upon defeating Grimm, the Grimmchild is upgraded and can deal 8 damage.<br>Finally, three more flames which are guarded by Grimmkin Nightmares have to be collected. There is also a fourth flame in Deepnest which requires no combat to collect. Having three flames and then using the Dream Nail on Grimm starts the fight with Nightmare King Grimm. When he is defeated, the Grimmchild is in its final form and can deal 11 damage. Requires Grimm Troupe content pack.',
-		category: 'summon',
-	},
-
 }
