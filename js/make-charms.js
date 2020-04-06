@@ -9,9 +9,9 @@ $( ()=> {
 			'" onclick="openCharm(\'' + charm.replace('\'','\\\'') + '\')">'
 				// .replace('\'','\\\'') is for defender's crest
 		);
-		if(idx%10==9) {
+		if(idx%10==0) {
 			$('#charm-div').append('<br class="charm-br">');
-			if(idx%20==9)
+			if(idx%20==0)
 				$('#charm-div').append(
 					'<img class="charm-placeholder" src="img/charms/empty.png">'
 				);
