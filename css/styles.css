@@ -1,7 +1,7 @@
 /* basics */
 body {
 	color: #000;
-	background: #000 url('https://img.wallpapersafari.com/desktop/1680/1050/16/83/WBwdPK.jpg') no-repeat;
+	background: #000 url('../img/background.jpg') no-repeat;
 }
 h1 {
 	color: #fff;
