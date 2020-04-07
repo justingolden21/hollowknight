@@ -28,20 +28,35 @@ $( ()=> {
 			}
 		}
 		else {
-			let isChecked = evt.target.checked;
 			// do filter
+			let isChecked = evt.target.checked;
 			for(charm of $('.charm') ) {
-				if(CHARMS[$(charm).attr('data-charm')].category.indexOf(currentCategory)!=-1) {
-					// show/hide charms in category
-					if(isChecked)
-						$(charm).removeClass('hidden');
-					else
-						$(charm).addClass('hidden');					
-				} // else ignore charms not in category
+				// only change (show/hide) charms in current category
+				let charmCategories = CHARMS[$(charm).attr('data-charm')].category;
+				if(charmCategories.indexOf(currentCategory)!=-1) {
+					let charmOtherCategory = charmCategories.replace(currentCategory,'').split(' ').join('');
+					// if charm only has one category
+					if(charmOtherCategory=='') {
+						// show/hide charms in category
+						if(isChecked)
+							$(charm).removeClass('hidden');
+						else
+							$(charm).addClass('hidden');
+					}
+					// else charm has another category
+					else {
+						// if either category is checked then show the charm
+						if(isChecked || $('#category-'+charmOtherCategory+'-checkbox').is(':checked') ) {
+							$(charm).removeClass('hidden');	
+						}
+						// else hide the charm
+						else {
+							$(charm).addClass('hidden');
+						}
+					}
+				}
+				// else ignore charms not in category
 			}
 		}
 	});
-
 });
-
-// TODO: doesn't work for charms with multiple categories
