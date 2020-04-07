@@ -176,7 +176,7 @@ const CHARMS = {
 			'Removes all knockback/recoil from hitting enemies'
 		],
 		acquisition: 'Bought from Salubra for 120 Geo in the Forgotten Crossroads.',
-		category: 'movement',
+		category: 'movement attack',
 	},
 	'Heavy_Blow': {
 		notches: 2,
