@@ -12,6 +12,8 @@ https://justingolden.me/hollowknight
 
 - Hover over the spoiler to reveal how to acquire it
 
+- Filter by category with the checkboxes at the top of the page. Toggle the "all" checkbox to check or uncheck all categories.
+
 - More features coming soon!
 
 ### Questions and To-Do
