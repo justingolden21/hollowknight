@@ -12,6 +12,9 @@ modals:
 - charm achievements
 
 misc:
+- tabs in info modal for settings (such as spoiler settings, fullscreen toggle)
+- add donate btn to info? nah
+- change email link to btn?
 - use realfavicongenerator.net
 - SEO
 - make it a PWA
