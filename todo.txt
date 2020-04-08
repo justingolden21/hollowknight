@@ -24,6 +24,8 @@ notes:
 - void heart costs 0 notches to equip
 - implement sorting by category by adding category as data- element to charms, then filtering by those
 - add interactions with other charms by having a string such as "{Charm:Wayward_Compass}" that is meant to be replaced with the image and link for that charm
+- to implement more filters, need one big function that handles all filters (all checkboxes) and scans through to see if each charm meets the filters or not and shows/hides it
+- should categories and charms be "or" or "and"? probably "and". can have dropdown or toggle for or/and between the checkbox rows, but doesn't seem worthwhile
 
 bugs:
 - effects are spoiled?
