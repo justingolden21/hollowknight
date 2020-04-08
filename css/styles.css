@@ -35,6 +35,7 @@ a {
 
 /* popovers */
 .popover-header {
+	color: #000;
 	border-radius: 0;
 }
 .popover-body {
@@ -91,6 +92,10 @@ hr {
 .btn-outline-light {
 	border-radius: 0;
 	margin: 4px;
+}
+.btn-outline-light.inverted {
+	color: #000;
+	background-color: #fff;
 }
 
 /* media rules */
