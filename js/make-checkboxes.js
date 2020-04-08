@@ -1,6 +1,13 @@
 const CATEGORIES = 'all movement geo defense soul attack summon interaction lifeblood'.split(' ');
 
 $( ()=> {
+
+	$('#filter-btn').click( ()=> {
+		$('#filter-btn').toggleClass('inverted');
+		$('#filter-controls').slideToggle();
+	});
+	$('#filter-controls').css('display', 'none');
+
 	// make checkboxes
 	$('#filter-controls').append('Categories: &nbsp; ');
 	for(category of CATEGORIES) {
@@ -11,11 +18,20 @@ $( ()=> {
 			'</div>'
 		);
 	}
+	// $('#filter-controls').append('<br>Notches: &nbsp; ');
+	// for(let i=-1; i<6; i++) {
+	// 	$('#filter-controls').append(
+	// 		'<div class="custom-control custom-checkbox custom-control-inline">' +
+	// 			'<input checked type="checkbox" id="notch-'+ (i==-1?'all':i) + '-checkbox" class="custom-control-input notch-checkbox">' +
+	// 			'<label class="custom-control-label" for="notch-'+ (i==-1?'all':i) + '-checkbox">' + (i==-1?'All':i) + '</label>' +
+	// 		'</div>'
+	// 	);
+	// }
 
 	// set checkbox change listeners
 	$('.category-checkbox').change( (evt)=> {
 		let currentCategory = evt.target.id.replace('category-','').replace('-checkbox','');
-		if(currentCategory=='all') {
+		if(currentCategory == 'all') {
 			if($('#category-all-checkbox').is(':checked') ) {
 				$('.category-checkbox').prop('checked',true);
 				// show all
