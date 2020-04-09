@@ -9,15 +9,16 @@ $( ()=> {
 	$('#filter-controls').css('display', 'none');
 
 	// make checkboxes
-	$('#filter-controls').append('Categories: &nbsp; ');
+	let tmpHTML = 'Categories: &nbsp; ';
 	for(category of CATEGORIES) {
-		$('#filter-controls').append(
+		tmpHTML +=
 			'<div class="custom-control custom-checkbox custom-control-inline">' +
 				'<input checked type="checkbox" id="category-'+ category + '-checkbox" class="custom-control-input category-checkbox">' +
 				'<label class="custom-control-label" for="category-'+ category + '-checkbox">' + capitalize(category) + '</label>' +
-			'</div>'
-		);
+			'</div>';
 	}
+	$('#filter-controls').append(tmpHTML);
+
 	// $('#filter-controls').append('<br>Notches: &nbsp; ');
 	// for(let i=-1; i<6; i++) {
 	// 	$('#filter-controls').append(
