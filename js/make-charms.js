@@ -1,23 +1,22 @@
 $( ()=> {
 	let idx = 0;
+	let tmpHTML = '';
 	for(charm in CHARMS) {
 		idx++;
-		$('#charm-div').append(
+		tmpHTML +=
 			'<img class="charm" src="img/charms/' + charm + '.png"' +
 			' data-toggle="popover" title="' + format(charm) +
 			'" alt="' + format(charm) +
 			'" tabindex="0" data-charm="' + charm + '"' +
-			'" onclick="openCharm(\'' + charm.replace('\'','\\\'') + '\')">'
-				// .replace('\'','\\\'') is for defender's crest
-		);
+			'" onclick="openCharm(\'' + charm.replace('\'','\\\'') + '\')">';
+				// .replace('\'','\\\'') is for defender's crest		
 		if(idx%10==0) {
-			$('#charm-div').append('<br class="charm-br">');
+			tmpHTML += '<br class="charm-br">';
 			if(idx%20==10)
-				$('#charm-div').append(
-					'<img class="charm-placeholder" src="img/charms/empty.png">'
-				);
+				tmpHTML += '<img class="charm-placeholder" src="img/charms/empty.png">';
 		}
 	}
+	$('#charm-div').append(tmpHTML);
 
 	$('[data-toggle="popover"]').popover({trigger: 'hover'});
 
