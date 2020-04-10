@@ -78,3 +78,15 @@ function changeFragile(charm, isFragile) {
 		$('#charm-modal .modal-body').html($('#charm-modal .modal-body').html().replace(CHARMS[charm].acquisition,CHARMS[charm].acquisition2) );
 	}
 }
+
+function doPrint() {
+	let w = window.open('', '_blank', '');
+	w.document.write(
+		'<link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/styles.css">' +
+		'<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">' +
+		'<style>body{background:#fff;}</style>' +
+		'<div id="charm-table" class="row">' + $('#charm-table').html() + '</div>' +
+		'<br>' + window.location.href +
+		'<script>window.print();window.close();</script>'
+	);
+}
