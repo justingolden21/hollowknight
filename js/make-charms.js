@@ -27,7 +27,7 @@ $( ()=> {
 			'" alt="' + format(charm) + '">' +
 			'<p><i>' + format(charm) + '</i></p>' +
 			'<p>' + CHARMS[charm].notches + (CHARMS[charm].notches==1?' notch':' notches') + '</p>' +
-			'<p>' + CHARMS[charm].description + '</p>' +
+			'<p>' + CHARMS[charm].description_short + '</p>' +
 			'</div>';
 	}
 	$('#charm-table').append(tmpHTML);
