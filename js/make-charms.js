@@ -26,11 +26,20 @@ $( ()=> {
 			' alt="' + format(charm) + '">' +
 			'<p><i>' + format(charm) + '</i></p>' +
 			'<p>' + CHARMS[charm].notches + (CHARMS[charm].notches==1?' notch':' notches') + '</p>' +
-			'<div class="table-desc-short py-2">' + CHARMS[charm].description_short + '</div>' +
-			'<div class="table-desc-long py-2 hidden">' + CHARMS[charm].description + '</div>' +
+			'<div class="table-desc table-desc-short py-2">' + CHARMS[charm].description_short + '</div>' +
+			'<div class="table-desc table-desc-long py-2 hidden">' + CHARMS[charm].description + '</div>' +
 			'</div>';
 	}
 	$('#charm-table').append(tmpHTML);
+
+	$('#description-switch').change( ()=> {
+		if($('#description-switch').is(':checked') )
+			$('#description-switch').parent().find('label').text('Long Descriptions');
+		else
+			$('#description-switch').parent().find('label').text('Short Descriptions');
+
+		$('.table-desc').toggleClass('hidden');
+	});
 
 	$('[data-toggle="popover"]').popover({trigger: 'hover'});
 
