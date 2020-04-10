@@ -22,9 +22,8 @@ $( ()=> {
 	for(charm in CHARMS) {
 		tmpHTML +=
 			'<div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center border">' +
-			'<img class="charm" src="img/charms/' + charm + '.png"' +
-			' data-toggle="popover" title="' + format(charm) +
-			'" alt="' + format(charm) + '">' +
+			'<img class="charm nohover" src="img/charms/' + charm + '.png"' +
+			' alt="' + format(charm) + '">' +
 			'<p><i>' + format(charm) + '</i></p>' +
 			'<p>' + CHARMS[charm].notches + (CHARMS[charm].notches==1?' notch':' notches') + '</p>' +
 			'<div class="table-desc-short py-2">' + CHARMS[charm].description_short + '</div>' +

@@ -22,7 +22,7 @@ a {
 	/* for debugging */
 	/*border: 2px solid red;*/
 }
-.charm:hover:not(#charm-table .charm), .charm:focus:not(#charm-table .charm) {
+.charm:hover:not(.nohover), .charm:focus:not(.nohover) {
 	background-color: #fff;
 	cursor: pointer;
 	border-radius: 50%;
