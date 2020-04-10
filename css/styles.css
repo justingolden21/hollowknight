@@ -29,8 +29,8 @@ a {
 	transition: 0.2s ease-in-out;
 	/*transform: scale(1.2);*/
 }
-.charm.hidden {
-	display: none;
+.hidden {
+	display: none !important;
 }
 
 /* popovers */

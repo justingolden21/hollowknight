@@ -27,7 +27,8 @@ $( ()=> {
 			'" alt="' + format(charm) + '">' +
 			'<p><i>' + format(charm) + '</i></p>' +
 			'<p>' + CHARMS[charm].notches + (CHARMS[charm].notches==1?' notch':' notches') + '</p>' +
-			'<p>' + CHARMS[charm].description_short + '</p>' +
+			'<div class="table-desc-short py-2">' + CHARMS[charm].description_short + '</div>' +
+			'<div class="table-desc-long py-2 hidden">' + CHARMS[charm].description + '</div>' +
 			'</div>';
 	}
 	$('#charm-table').append(tmpHTML);
