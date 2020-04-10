@@ -22,7 +22,7 @@ a {
 	/* for debugging */
 	/*border: 2px solid red;*/
 }
-.charm:hover, .charm:focus {
+.charm:hover:not(#charm-table .charm), .charm:focus:not(#charm-table .charm) {
 	background-color: #fff;
 	cursor: pointer;
 	border-radius: 50%;
@@ -69,6 +69,9 @@ a {
 hr {
 	border-color: #fff;
 	width: 240px;
+}
+#charm-table hr {
+	width: 80%;
 }
 .spoiler {
 	background-color: #fff;

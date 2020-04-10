@@ -52,12 +52,11 @@
 
 <div id="charm-div" class="text-center"></div>
 
-<!-- <div class="text-center">
-	<br>
-	<button class="btn btn-outline-light"><i class="fas fa-question"></i> About Charms</button>
-	<button class="btn btn-outline-light"><i class="fas fa-table"></i> Charm List</button>
-	<button class="btn btn-outline-light"><i class="fas fa-award"></i> Achievements</button>
-</div> -->
+<div class="text-center p-2">
+	<!-- <button class="btn btn-outline-light"><i class="fas fa-question"></i> About Charms</button> -->
+	<button class="btn btn-outline-light" data-toggle="modal" data-target="#all-charms-modal"><i class="fas fa-table"></i> Charm List</button>
+	<!-- <button class="btn btn-outline-light"><i class="fas fa-award"></i> Achievements</button> -->
+</div>
 
 <div id="charm-modal" class="modal fade">
 	<div class="modal-dialog modal-lg">
@@ -67,6 +66,19 @@
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 			</div>
 			<div class="modal-body">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="all-charms-modal" class="modal fade">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Charm List</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div id="charm-table" class="modal-body row">
 			</div>
 		</div>
 	</div>

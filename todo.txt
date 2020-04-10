@@ -12,6 +12,9 @@ modals:
 - charm achievements
 
 misc:
+- full desc vs short desc setting for charm table? toggle adjacent to title or in footer?
+- where should print btn be placed? need @print css media rule
+- display unbreakable charms in table?
 - tabs in info modal for settings (such as spoiler settings, fullscreen toggle)
 - add donate btn to info? nah
 - change email link to btn?
@@ -23,6 +26,7 @@ misc:
 - make clickable tags? sort by that category?
 
 notes:
+- handle grimmchild charm differently in print table (details tag in description...)
 - some charms (ie kingsoul) have multiple locations
 - void heart costs 0 notches to equip
 - implement sorting by category by adding category as data- element to charms, then filtering by those

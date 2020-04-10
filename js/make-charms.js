@@ -18,6 +18,20 @@ $( ()=> {
 	}
 	$('#charm-div').append(tmpHTML);
 
+	tmpHTML = '';
+	for(charm in CHARMS) {
+		tmpHTML +=
+			'<div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center border">' +
+			'<img class="charm" src="img/charms/' + charm + '.png"' +
+			' data-toggle="popover" title="' + format(charm) +
+			'" alt="' + format(charm) + '">' +
+			'<p><i>' + format(charm) + '</i></p>' +
+			'<p>' + CHARMS[charm].notches + (CHARMS[charm].notches==1?' notch':' notches') + '</p>' +
+			'<p>' + CHARMS[charm].description + '</p>' +
+			'</div>';
+	}
+	$('#charm-table').append(tmpHTML);
+
 	$('[data-toggle="popover"]').popover({trigger: 'hover'});
 
 	$('.charm').keydown( (evt)=> {
