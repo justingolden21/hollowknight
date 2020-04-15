@@ -87,6 +87,7 @@ function doPrint() {
 		'<style>body{background:#fff;}</style>' +
 		'<div id="charm-table" class="row">' + $('#charm-table').html() + '</div>' +
 		'<br>' + window.location.href +
-		'<script>window.print();window.close();</script>'
+		'<script>window.print();</script>'
+		// '<script>window.print();window.close();</script>'
 	);
 }
