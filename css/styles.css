@@ -82,6 +82,9 @@ hr {
 #info-modal ul li {
 	margin-bottom: 8px;
 }
+#all-charms-modal p {
+	margin: 0;
+}
 
 /* tabs */
 .nav-item {

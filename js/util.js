@@ -85,7 +85,7 @@ function doPrint() {
 		'<link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/styles.css">' +
 		'<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">' +
 		'<style>body{background:#fff;}</style>' +
-		'<div id="charm-table" class="row">' + $('#charm-table').html() + '</div>' +
+		'<div id="charm-table" class="row">' + $('#charm-table').html().split('col-12 col-md-6 col-lg-4 col-xl-3').join('col-3') + '</div>' +
 		'<br>' + window.location.href +
 		'<script>window.print();</script>'
 		// '<script>window.print();window.close();</script>'
