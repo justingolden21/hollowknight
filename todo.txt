@@ -33,6 +33,7 @@ notes:
 - add interactions with other charms by having a string such as "{Charm:Wayward_Compass}" that is meant to be replaced with the image and link for that charm
 - to implement more filters, need one big function that handles all filters (all checkboxes) and scans through to see if each charm meets the filters or not and shows/hides it
 - should categories and charms be "or" or "and"? probably "and". can have dropdown or toggle for or/and between the checkbox rows, but doesn't seem worthwhile
+- charm combos: https://youtu.be/XMzS2Fra-WE (and on wiki)
 
 bugs:
 - effects are spoiled?
