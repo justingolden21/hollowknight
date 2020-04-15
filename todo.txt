@@ -12,7 +12,6 @@ modals:
 - charm achievements
 
 misc:
-- full desc vs short desc setting for charm table? toggle adjacent to title or in footer?
 - where should print btn be placed? need @print css media rule
 - display unbreakable charms in table?
 - tabs in info modal for settings (such as spoiler settings, fullscreen toggle)
