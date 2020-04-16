@@ -24,6 +24,8 @@ misc:
 - interacts well with section for charms? see "charm interactions" on the wiki
 - make clickable tags? sort by that category?
 - for printable charms, option to drag them around and choose which ones to print, select image size, etc in settings modal
+- add combos (display combo charms, clickable links to that charm modal, details/summary for each charm interaction, opening one closes the others, show charm notches for combo charms, list of all combos modal, toggle for displaying combos in printable table)
+- charm tier list maker? with link to list in url param and downloadable img
 
 notes:
 - handle grimmchild charm differently in print table (details tag in description...)
