@@ -1,5 +1,4 @@
 important:
-- update charm info from wiki
 
 maybe:
 - display kingsong/grimm charm set as tabs
