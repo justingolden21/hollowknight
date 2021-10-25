@@ -13,16 +13,18 @@ a {
 }
 
 /* charms */
-.charm, .charm-placeholder {
+.charm,
+.charm-placeholder {
 	/*width: 96px;*/
 	width: 72px;
-	margin: 4px;	
+	margin: 4px;
 	padding: 4px;
 
 	/* for debugging */
 	/*border: 2px solid red;*/
 }
-.charm:hover:not(.nohover), .charm:focus:not(.nohover) {
+.charm:hover:not(.nohover),
+.charm:focus:not(.nohover) {
 	background-color: #fff;
 	cursor: pointer;
 	border-radius: 50%;
@@ -90,7 +92,8 @@ hr {
 .nav-item {
 	cursor: pointer;
 }
-.nav-link.active, .nav-link.active:hover {
+.nav-link.active,
+.nav-link.active:hover {
 	color: #000 !important;
 }
 
@@ -105,11 +108,13 @@ hr {
 }
 
 /* media rules */
-@media (max-width: 992px) { /* md */
+@media (max-width: 992px) {
+	/* md */
 	.charm {
 		width: 64px;
 	}
-	.charm-placeholder, .charm-br {
+	.charm-placeholder,
+	.charm-br {
 		display: none;
 	}
 }
