@@ -1,3 +1,6 @@
+important:
+- update charm info from wiki
+
 maybe:
 - display kingsong/grimm charm set as tabs
 
@@ -7,7 +10,7 @@ filters:
 - locations spoiler click to show, toggle switch at top to show/hide locations and abilities
 
 modals:
-- what are charms, how to equip them/benches, how many notches, where to get more notches, overcharmed
+- what are charms, how to equip them/benches, how many notches, where to get more notches, info on overcharming
 - view charms on modal, view as one large table in modal, print friendly table
 - charm achievements
 
@@ -26,6 +29,8 @@ misc:
 - for printable charms, option to drag them around and choose which ones to print, select image size, etc in settings modal
 - add combos (display combo charms, clickable links to that charm modal, details/summary for each charm interaction, opening one closes the others, show charm notches for combo charms, list of all combos modal, toggle for displaying combos in printable table)
 - charm tier list maker? with link to list in url param and downloadable img
+- charm + notch set builder (choose which charms to equip, see notches used, view all effects of equipped charms, option to save multiple layouts)
+- add image of longnail / mark of pride striking distance to both charm modals
 
 notes:
 - handle grimmchild charm differently in print table (details tag in description...)
