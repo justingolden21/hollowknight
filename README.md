@@ -6,15 +6,19 @@ https://justingolden.me/hollowknight
 
 ### Using the Website
 
-- Click on a charm to learn about it
+-   Click on a charm to learn about it
 
-- View the charm's notch cost, price, location, backstory, effects, and more
+-   View the charm's notch cost, price, location, backstory, effects, and more
 
-- Hover over the spoiler to reveal how to acquire it
+-   Hover over the spoiler to reveal how to acquire it
 
-- Filter by category with the checkboxes at the top of the page. Toggle the "all" checkbox to check or uncheck all categories.
+-   Filter by category with the checkboxes at the top of the page. Toggle the "all" checkbox to check or uncheck all categories.
 
-- More features coming soon!
+-   More features coming soon!
+
+### Dev
+
+`npx live-server`
 
 ### Questions and To-Do
 

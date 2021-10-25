@@ -18,11 +18,8 @@ $(() => {
 			charm.replace("'", "\\'") +
 			'\')">';
 		// .replace('\'','\\\'') is for defender's crest
-		if (idx % 10 == 0) {
+		if ([10, 21, 31, 42].includes(idx)) {
 			tmpHTML += '<br class="charm-br">';
-			if (idx % 20 == 10)
-				tmpHTML +=
-					'<img class="charm-placeholder" src="img/charms/empty.png">';
 		}
 	}
 	$('#charm-div').append(tmpHTML);

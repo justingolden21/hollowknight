@@ -1,7 +1,7 @@
 /* basics */
 body {
 	color: #fff;
-	background: #000 url('../img/background.jpg') no-repeat;
+	background: #000 url('../img/background.jpg') no-repeat center center fixed;
 }
 h1 {
 	color: #fff;
@@ -21,7 +21,7 @@ a {
 	padding: 4px;
 
 	/* for debugging */
-	/*border: 2px solid red;*/
+	/* border: 2px solid red; */
 }
 .charm:hover:not(.nohover),
 .charm:focus:not(.nohover) {
