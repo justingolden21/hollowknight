@@ -250,7 +250,7 @@ const CHARMS = {
 		],
 		acquisition:
 			"Located in Kingdom's Edge, upon a massive anvil in a hidden room in front of a massive corpse known in the game files as \"Ancient Nailsmith\".<br>Finding it requires travelling to the very east end of Kingdom's Edge past Oro's hut and locating a breakable floor next to his training dummy. After traversing down a few levels, and looping up the west end of the section, there will be a small tunnel located within a wall leading to the Charm.",
-		category: 'attack movement',
+		category: 'attack',
 	},
 	Longnail: {
 		notches: 2,
