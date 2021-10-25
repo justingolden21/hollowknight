@@ -150,3 +150,18 @@ function doPrint() {
 		// '<script>window.print();window.close();</script>'
 	);
 }
+
+async function shareWebsite() {
+	const shareData = {
+		title: 'Hollow Knight Charms',
+		text: 'See detailed information on every charm in Hollow Knight',
+		url: 'https://justingolden.me/hollowknight',
+	};
+
+	try {
+		await navigator.share(shareData);
+		console.log('Share successful');
+	} catch (err) {
+		console.log('Error sharing: ' + err);
+	}
+}
