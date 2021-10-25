@@ -33,7 +33,7 @@ const CHARMS = {
 		description_short:
 			'When recovering from damage, the bearer will remain invulnerable for longer.',
 		effects: [
-			'Increase invincibility duration after being hit to 1.7 seconds (base-1.3, dif-0.4)',
+			'Increase invincibility duration after being hit to 1.7 seconds (base-1.3, dif-0.45)',
 			'Reduces hit recoil (no input time) after being hit to 0.08 seconds (base-0.2, dif-0.12)',
 		],
 		acquisition: 'Bought from Sly in Dirtmouth for 200 Geo.',
@@ -97,7 +97,7 @@ const CHARMS = {
 		description_short:
 			'The bearer will be able to dash more often as well as dash downwards.',
 		effects: [
-			'Reduce the Mothwing Cloak cooldown by 50%',
+			'Reduce the Mothwing Cloak cooldown to 0.4 seconds (base 0.6, dif -0.2)',
 			'Allows dashing downwards by holding DOWN',
 		],
 		acquisition:
@@ -170,7 +170,9 @@ const CHARMS = {
 			'Causes the bearer to find more Geo when defeating enemies.<hr>This charm is fragile, and will break if its bearer is killed.',
 		description_short:
 			'Causes the bearer to find more Geo when defeating enemies. This charm is fragile, and will break if its bearer is killed.',
-		effects: ['Enemies drop 20-60% more Geo'],
+		effects: [
+			'Enemies drop 20-100% more Geo. The amount of each Geo type (1, 5, or 25 Geo) is increased by 20%, rounded up',
+		],
 		acquisition:
 			"Purchased from Leg Eater in Fungal Wastes for 250 Geo. Wearing the Defender's Crest will cause Leg Eater to lower the cost to 200 Geo.<br>When broken, Leg Eater can repair it for 150 Geo, or for 120 Geo while wearing the Defender's Crest.",
 		acquisition2:
@@ -186,7 +188,9 @@ const CHARMS = {
 			'Strengthens the bearer, increasing the damage they deal to enemies with their nail.<hr>This charm is fragile, and will break if its bearer is killed.',
 		description_short:
 			'Strengthens the bearer, increasing the damage they deal to enemies with their nail. This charm is fragile, and will break if its bearer is killed.',
-		effects: ['Increases Nail damage by 50% rounded up'],
+		effects: [
+			'Increases Nail damage by 50% (rounded to the nearest whole number, or nearest even number when .5)',
+		],
 		acquisition:
 			"Purchased from Leg Eater in Fungal Wastes for 600 Geo. Wearing the Defender's Crest will cause Leg Eater to lower the cost to 480 Geo.<br>When broken, Leg Eater can repair it for 350 Geo, or for 280 Geo while wearing the Defender's Crest.",
 		acquisition2:
@@ -228,8 +232,7 @@ const CHARMS = {
 			"Increases the force of the bearer's nail, causing enemies to recoil further when hit.",
 		effects: [
 			'Increases Nail attack knockback by 75%',
-			'Increases Great Slash and Dash Slash knockback by 100%',
-			'Increases Cyclone Slash knockback by 150%',
+			'Increases Great Slash knockback by 33%',
 			'Reduces amount of hits needed to stagger a Boss by 1',
 		],
 		acquisition:
@@ -245,7 +248,7 @@ const CHARMS = {
 		description_short:
 			'Allows the bearer to slash much more rapidly with their nail.',
 		effects: [
-			'Decreases Attack Duration (How long the hitbox is active) from 0.36s to 0.25s',
+			'Decreases Attack Duration (How long the hitbox is active) from 0.35s to 0.28s',
 			'Decreases Attack Cooldown (Total time between attacks) from 0.41s to 0.25s',
 		],
 		acquisition:
@@ -285,8 +288,8 @@ const CHARMS = {
 		description_short:
 			"When close to death, the bearer's strength will increase.",
 		effects: [
-			'Increases Nail damage by 75% when on 1 HP',
-			'This effect is also applied to Great Slash and Dash Slash (but not to Cyclone Slash)',
+			'Increases Nail damage by 75% (rounded to the nearest whole number, or nearest even number when .5) when on 1 Mask',
+			'This effect is also applied to Nail Arts',
 		],
 		acquisition:
 			"Found in King's Pass, the starting cavern, behind a spike filled cavern. Look for the Geo cluster in the bottom right of the pit room. Dash to cross the spikes, and continue right to find the charm.<br>Can be reached at the beginning of the game by nail pogoing on the spikes, or returned to later with the Mothwing Cloak or Mantis Claw.",
@@ -300,9 +303,7 @@ const CHARMS = {
 			'Senses the pain of its bearer and lashes out at the world around them.<hr>When taking damage, sprout thorny vines that damage nearby foes.',
 		description_short:
 			'When taking damage, sprout thorny vines that damage nearby foes.',
-		effects: [
-			'Damages nearby enemies for up to 2x base Nail damage when hit',
-		],
+		effects: ['Damages nearby enemies for the base Nail damage when hit'],
 		acquisition:
 			'Found in Greenpath in a maze of thorns. Requires Mothwing Cloak to reach.',
 		category: 'defense attack',
@@ -378,7 +379,7 @@ const CHARMS = {
 			'A charm containing a crystal lens.<hr>Increases the speed of focusing SOUL, allowing the bearer to heal damage faster.',
 		description_short:
 			'Increases the speed of focusing SOUL, allowing the bearer to heal faster.',
-		effects: ['Focus casts twice as fast'],
+		effects: ['Focus 33% faster'],
 		acquisition:
 			'Bought from Salubra in the Forgotten Crossroads for 800 Geo.',
 		category: 'soul',
@@ -406,7 +407,7 @@ const CHARMS = {
 			'Contains a living core that seeps precious lifeblood.<hr>When resting, the bearer will gain a coating of lifeblood that protects from a modest amount of damage.',
 		description_short:
 			'When resting, the bearer will gain a coating of lifeblood that protects from a modest amount of damage.',
-		effects: ['Adds 2 Lifeblood masks when resting.'],
+		effects: ['Adds 2 Lifeblood masks when resting'],
 		acquisition:
 			'Bought from Salubra in the Forgotten Crossroads for 250 Geo.',
 		category: 'lifeblood',
@@ -433,7 +434,7 @@ const CHARMS = {
 		description_short:
 			'The bearer will have a healthier shell and can take more damage, but they will not be able to heal themselves by focusing SOUL.',
 		effects: [
-			'Increase HP by 40% (rounded down) + 1, all masks become Lifeblood',
+			'Increase Masks by 40% (rounded up), all Masks become Lifeblood',
 			'Causes Lifeseeds to flock to the Knight instead of running away',
 		],
 		acquisition:
@@ -453,7 +454,7 @@ const CHARMS = {
 			'Makes the enemies inside the Hive passive',
 		],
 		acquisition:
-			'Located in the Hive, below the room where the Lifeblood Icon Hive Knight is fought. Requires defeating the Hive Knight.',
+			'Located in the Hive, below the room where the Hive Knight is fought. Requires defeating the Hive Knight.',
 		category: 'defense soul',
 	},
 	Spore_Shroom: {
@@ -511,7 +512,7 @@ const CHARMS = {
 		description_short:
 			"Increases the bearer's mastery of Nail Arts, allowing them to focus their power faster and unleash arts sooner.",
 		effects: [
-			'Reduces the charge time of Nail Arts to 0.75 seconds (base 1.75, dif -1).',
+			'Reduces the charge time of Nail Arts to 0.75 seconds (base 1.35, dif -0.6)',
 		],
 		acquisition:
 			'Given by Sly after receiving all 3 Nail Arts from the Nailmasters: Nailmaster Oro, Nailmaster Mato, Nailmaster Sheo',
@@ -526,7 +527,7 @@ const CHARMS = {
 		description_short:
 			'Summons weaverlings to give the lonely bearer some companionship and protection.',
 		effects: [
-			'Summons 3 small Weaverlings that attack enemies for 3 damage per hit.',
+			'Summons 3 small Weaverlings that attack enemies for 3 damage per hit',
 		],
 		acquisition:
 			"Found in the upper part of Weavers' Den. Requires Grimm Troupe content pack.",
@@ -576,6 +577,7 @@ const CHARMS = {
 			'Allows access to the Grimmkin',
 			'Summons a flying companion that will deal varied amounts of damage depending on the level of the Grimmchild',
 			'Allows access to the Grimm and Nightmare King Grimm fights',
+			'Activates unique dialogue when speaking with the White Lady',
 		],
 		acquisition:
 			'Grimmchild is given by Troupe Master Grimm in Dirtmouth after the Grimm Troupe has been summoned. Having Grimmchild equipped reveals three flames around Hallownest. These can be absorbed by the Grimmchild after defeating the Grimmkin Novices which guard them. Returning to Grimm after this upgrades the Grimmchild, causing it to deal 5 damage.<br>After this, three more flames can be collected which are guarded by Grimmkin Masters. Subsequently returning to Grimm will initiate a boss fight with him. Upon defeating Grimm, the Grimmchild is upgraded and can deal 8 damage.<br>Finally, three more flames which are guarded by Grimmkin Nightmares have to be collected. There is also a fourth flame in Deepnest which requires no combat to collect. Having three flames and then using the Dream Nail on Grimm starts the fight with Nightmare King Grimm. When he is defeated, the Grimmchild is in its final form and can deal 11 damage. Requires Grimm Troupe content pack.',
@@ -626,7 +628,7 @@ const CHARMS = {
 			'Unlocks 4 endings',
 			'Prevents the non-Void Heart ending for the save file',
 			'Renders the Siblings, Void Tendrils and Shade passive',
-			'Allows access to the Godmaster Icon Pantheon of Hallownest',
+			'Allows access to the Pantheon of Hallownest',
 			'This charm takes up the spot that Kingsoul was in previously.', // added this
 		],
 		acquisition:
