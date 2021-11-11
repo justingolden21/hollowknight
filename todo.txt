@@ -2,6 +2,7 @@ important:
 
 maybe:
 - display kingsong/grimm charm set as tabs
+- recommended charm setups for bosses? https://youtu.be/pPbsCEaplZE
 
 filters:
 - filter by notch cost, method of obtaining (purchase from x, purchase from y, found in z, rescure x grubs), location, or cost (more than/less than x)
